@@ -15,28 +15,62 @@ class ClaseCApp {
 
   async init() {
     try {
+      this.showLoading('Inicializando aplicación...');
+      
       await this.loadQuestions();
+      this.showLoading('Registrando Service Worker...');
+      
       await this.registerServiceWorker();
+      this.showLoading('Configurando interfaz...');
+      
       this.setupEventListeners();
       this.updateWelcomeScreen();
       this.requestNotificationPermission();
+      
+      this.hideLoading();
+      console.log('✅ Aplicación inicializada correctamente');
+      
     } catch (error) {
-      console.error('Error inicializando la aplicación:', error);
-      this.showError('Error cargando la aplicación. Verifica tu conexión a internet.');
+      console.error('❌ Error inicializando la aplicación:', error);
+      this.showError(`Error cargando la aplicación: ${error.message}`);
     }
   }
 
   async loadQuestions() {
     try {
-      const response = await fetch('questions.json');
+      console.log('🔄 Cargando preguntas...');
+      
+      // Timeout de 10 segundos para evitar cargas infinitas
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
+      
+      const response = await fetch('./questions.json', {
+        signal: controller.signal
+      });
+      
+      clearTimeout(timeoutId);
+      
       if (!response.ok) {
-        throw new Error('Error cargando preguntas');
+        throw new Error(`Error HTTP: ${response.status} - ${response.statusText}`);
       }
+      
       const data = await response.json();
+      
+      if (!data.questions || !Array.isArray(data.questions)) {
+        throw new Error('Formato de questions.json inválido');
+      }
+      
       this.questions = data.questions;
-      console.log(`Cargadas ${this.questions.length} preguntas`);
+      console.log(`✅ Cargadas ${this.questions.length} preguntas`);
+      
     } catch (error) {
-      console.error('Error cargando preguntas:', error);
+      if (error.name === 'AbortError') {
+        console.error('❌ Timeout cargando preguntas');
+        this.showError('Timeout: La carga de preguntas tardó demasiado. Verifica tu conexión.');
+      } else {
+        console.error('❌ Error cargando preguntas:', error);
+        this.showError(`Error cargando preguntas: ${error.message}`);
+      }
       throw error;
     }
   }
@@ -550,6 +584,32 @@ class ClaseCApp {
     `;
     
     document.body.appendChild(errorModal);
+  }
+
+  hideLoading() {
+    const progressText = document.getElementById('progress-text');
+    const progressFill = document.getElementById('progress-fill');
+    
+    if (progressText) {
+      progressText.textContent = '¡Listo para estudiar!';
+    }
+    
+    if (progressFill) {
+      progressFill.style.width = '100%';
+    }
+  }
+
+  showLoading(message = 'Cargando...') {
+    const progressText = document.getElementById('progress-text');
+    const progressFill = document.getElementById('progress-fill');
+    
+    if (progressText) {
+      progressText.textContent = message;
+    }
+    
+    if (progressFill) {
+      progressFill.style.width = '50%';
+    }
   }
 
   showUpdateNotification() {
