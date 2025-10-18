@@ -4,21 +4,21 @@ const DYNAMIC_CACHE_NAME = 'clase-c-chile-dynamic-v1.0.0';
 
 // Archivos estáticos que se cachean inmediatamente
 const STATIC_FILES = [
-  '/pwa_ExamenDeClaseC_Chile/index.html',
-  '/pwa_ExamenDeClaseC_Chile/manifest.json',
-  '/pwa_ExamenDeClaseC_Chile/styles.css',
-  '/pwa_ExamenDeClaseC_Chile/app.js',
-  '/pwa_ExamenDeClaseC_Chile/questions.json',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-72x72.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-96x96.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-128x128.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-144x144.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-152x152.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-192x192.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-384x384.png',
-  '/pwa_ExamenDeClaseC_Chile/icons/icon-512x512.png',
-  '/pwa_ExamenDeClaseC_Chile/img/img_q21.png',
-  '/pwa_ExamenDeClaseC_Chile/pdfs/LNC-MOTOCICLISTAS.pdf'
+  'index.html',
+  'manifest.json',
+  'styles.css',
+  'app.js',
+  'questions.json',
+  'icons/icon-72x72.png',
+  'icons/icon-96x96.png',
+  'icons/icon-128x128.png',
+  'icons/icon-144x144.png',
+  'icons/icon-152x152.png',
+  'icons/icon-192x192.png',
+  'icons/icon-384x384.png',
+  'icons/icon-512x512.png',
+  'img/img_q21.png',
+  'pdfs/LNC-MOTOCICLISTAS.pdf'
 ];
 
 // Instalación del Service Worker
@@ -104,7 +104,7 @@ async function handleRequest(request) {
     
     // Si no hay cache, devolver página offline
     if (request.destination === 'document') {
-      return await caches.match('/pwa_ExamenDeClaseC_Chile/index.html');
+      return await caches.match('index.html');
     }
     
     throw error;
