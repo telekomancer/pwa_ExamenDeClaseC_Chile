@@ -42,7 +42,7 @@ git checkout main
 echo ""
 echo "✅ ¡Despliegue manual completado!"
 echo "🌐 Tu PWA estará disponible en:"
-echo "   https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/"
+echo "   https://telekomancer.github.io/"
 echo ""
 echo "📱 Para instalar en tu teléfono:"
 echo "   1. Abre la URL en tu navegador móvil"

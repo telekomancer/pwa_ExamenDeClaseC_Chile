@@ -1,87 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Limpiar Caché - PWA Clase C</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpiar Caché PWA</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        button { padding: 10px 20px; margin: 10px; background: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        button:hover { background: #1d4ed8; }
-        .info { background: #f3f4f6; padding: 15px; border-radius: 5px; margin: 10px 0; }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        .success {
+            color: #059669;
+            font-weight: bold;
+        }
+        .error {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .info {
+            background: #dbeafe;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>🧹 Limpiar Caché y Datos</h1>
-    
-    <div class="info">
-        <h3>Estado Actual:</h3>
-        <p id="current-status">Verificando...</p>
+    <div class="container">
+        <h1>🧹 Limpiar Caché PWA</h1>
+        <p>Esta página te ayuda a limpiar el caché y forzar la actualización de la PWA.</p>
+        
+        <div class="info">
+            <strong>⚠️ Importante:</strong> Después de limpiar el caché, cierra y vuelve a abrir la PWA para que los cambios surtan efecto.
+        </div>
+
+        <button onclick="clearServiceWorker()">🗑️ Limpiar Service Worker</button>
+        <button onclick="clearAllCaches()">💾 Limpiar Caché</button>
+        <button onclick="reloadApp()">🔄 Recargar Aplicación</button>
+        <button onclick="checkStatus()">✅ Verificar Estado</button>
+
+        <div id="status"></div>
     </div>
-    
-    <button onclick="clearLocalStorage()">Limpiar LocalStorage</button>
-    <button onclick="clearServiceWorker()">Limpiar Service Worker</button>
-    <button onclick="clearAll()">Limpiar Todo</button>
-    <button onclick="checkStatus()">Verificar Estado</button>
-    
-    <div id="results"></div>
 
     <script>
-        function checkStatus() {
-            const results = document.getElementById('results');
-            let status = '<h3>Estado del Sistema:</h3>';
-            
-            // Verificar localStorage
+        function showStatus(message, type = 'info') {
+            const status = document.getElementById('status');
+            status.innerHTML = `<div class="${type}">${message}</div>`;
+        }
+
+        async function clearServiceWorker() {
             try {
-                const progress = localStorage.getItem('clase-c-progress');
-                if (progress) {
-                    const data = JSON.parse(progress);
-                    status += `<p>✅ LocalStorage: ${data.completedSessions?.length || 0} sesiones guardadas</p>`;
+                if ('serviceWorker' in navigator) {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    for (let registration of registrations) {
+                        await registration.unregister();
+                        showStatus('✅ Service Worker eliminado correctamente', 'success');
+                    }
                 } else {
-                    status += `<p>❌ LocalStorage: Vacío</p>`;
+                    showStatus('⚠️ Service Worker no soportado', 'error');
                 }
-            } catch (e) {
-                status += `<p>❌ LocalStorage: Error - ${e.message}</p>`;
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
             }
+        }
+
+        async function clearAllCaches() {
+            try {
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    for (let cacheName of cacheNames) {
+                        await caches.delete(cacheName);
+                    }
+                    showStatus(`✅ ${cacheNames.length} cachés eliminados`, 'success');
+                } else {
+                    showStatus('⚠️ Cache API no soportada', 'error');
+                }
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
+            }
+        }
+
+        function reloadApp() {
+            showStatus('🔄 Recargando aplicación...', 'info');
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 1000);
+        }
+
+        async function checkStatus() {
+            let status = '<h3>📊 Estado Actual:</h3>';
             
             // Verificar Service Worker
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.getRegistrations().then(registrations => {
-                    status += `<p>✅ Service Worker: ${registrations.length} registrado(s)</p>`;
-                    results.innerHTML = status;
-                });
+                const registrations = await navigator.serviceWorker.getRegistrations();
+                status += `<p>Service Worker: ${registrations.length} registrado(s)</p>`;
             } else {
-                status += `<p>❌ Service Worker: No soportado</p>`;
-                results.innerHTML = status;
+                status += `<p>Service Worker: No soportado</p>`;
             }
-        }
-        
-        function clearLocalStorage() {
+
+            // Verificar Cachés
+            if ('caches' in window) {
+                const cacheNames = await caches.keys();
+                status += `<p>Cachés: ${cacheNames.length} activo(s)</p>`;
+            } else {
+                status += `<p>Cachés: No soportado</p>`;
+            }
+
+            // Verificar URL
+            status += `<p>URL Actual: ${window.location.href}</p>`;
+            
+            // Verificar Manifest
             try {
-                localStorage.removeItem('clase-c-progress');
-                document.getElementById('results').innerHTML = '<p>✅ LocalStorage limpiado</p>';
-            } catch (e) {
-                document.getElementById('results').innerHTML = `<p>❌ Error: ${e.message}</p>`;
+                const response = await fetch('/manifest.json');
+                if (response.ok) {
+                    const manifest = await response.json();
+                    status += `<p>Manifest: ✅ Cargado (${manifest.name})</p>`;
+                    status += `<p>Start URL: ${manifest.start_url}</p>`;
+                    status += `<p>Scope: ${manifest.scope}</p>`;
+                } else {
+                    status += `<p>Manifest: ❌ Error ${response.status}</p>`;
+                }
+            } catch (error) {
+                status += `<p>Manifest: ❌ Error: ${error.message}</p>`;
             }
+
+            showStatus(status, 'info');
         }
-        
-        function clearServiceWorker() {
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.getRegistrations().then(registrations => {
-                    registrations.forEach(registration => {
-                        registration.unregister();
-                    });
-                    document.getElementById('results').innerHTML = '<p>✅ Service Worker limpiado</p>';
-                });
-            } else {
-                document.getElementById('results').innerHTML = '<p>❌ Service Worker no soportado</p>';
-            }
-        }
-        
-        function clearAll() {
-            clearLocalStorage();
-            clearServiceWorker();
-            document.getElementById('results').innerHTML = '<p>✅ Todo limpiado. Recarga la página.</p>';
-        }
-        
+
         // Verificar estado al cargar
         window.onload = checkStatus;
     </script>

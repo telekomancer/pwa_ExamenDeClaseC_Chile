@@ -1,6 +1,6 @@
-const CACHE_NAME = 'clase-c-chile-v1.0.0';
-const STATIC_CACHE_NAME = 'clase-c-chile-static-v1.0.0';
-const DYNAMIC_CACHE_NAME = 'clase-c-chile-dynamic-v1.0.0';
+const CACHE_NAME = 'clase-c-chile-v2.0.0';
+const STATIC_CACHE_NAME = 'clase-c-chile-static-v2.0.0';
+const DYNAMIC_CACHE_NAME = 'clase-c-chile-dynamic-v2.0.0';
 
 // Archivos estáticos que se cachean inmediatamente
 const STATIC_FILES = [
