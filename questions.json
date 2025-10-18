@@ -1,0 +1,3094 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Mientras conduce usted siente un fuerte olor a gasolina. ¿Qué debería hacer usted?",
+      "options": [
+        "No preocuparse, ya que sólo son los gases de escape.",
+        "Continuar a una velocidad reducida.",
+        "Continuar porque sabe que se detendrá algunos kilómetros más allá.",
+        "Detenerse e investigar el problema."
+      ],
+      "correct": 3,
+      "explanation": "Un fuerte olor a gasolina indica una fuga de combustible que puede ser peligrosa. Debe detenerse inmediatamente e investigar el problema.",
+      "category": "Emergencias",
+      "difficulty": "básica"
+    },
+    {
+      "id": 2,
+      "question": "¿Cuál es la principal razón para usar zapatos apropiados cuando conduce?",
+      "options": [
+        "Para tener un adecuado control de los pedales.",
+        "Para evitar el desgaste acelerado de las gomas de los pedales.",
+        "Para poder efectuar los cambios de marcha más rápidamente.",
+        "Para poder caminar sin problemas en el caso que necesite solicitar ayuda."
+      ],
+      "correct": 0,
+      "explanation": "Los zapatos apropiados son esenciales para tener un control adecuado de los pedales, especialmente del freno, acelerador y embrague.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 3,
+      "question": "Es esencial que la presión de los neumáticos sea chequeada regularmente. ¿Cuándo se debe hacer esto?",
+      "options": [
+        "Después de un viaje largo.",
+        "Después de conducir a alta velocidad.",
+        "Cuando los neumáticos están fríos.",
+        "Cuando los neumáticos están calientes."
+      ],
+      "correct": 2,
+      "explanation": "La presión de los neumáticos debe revisarse cuando están fríos, ya que el calor aumenta la presión y daría lecturas incorrectas.",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 4,
+      "question": "La presión de los neumáticos debe revisarse:",
+      "options": [
+        "Cuando los neumáticos están fríos.",
+        "Cuando los neumáticos están calientes.",
+        "En cualquier momento, porque da igual que los neumáticos estén fríos o calientes."
+      ],
+      "correct": 0,
+      "explanation": "La presión de los neumáticos debe revisarse cuando están fríos para obtener lecturas precisas y seguras.",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 5,
+      "question": "¿Por qué los neumáticos deben mantenerse a la presión indicada por el fabricante?",
+      "options": [
+        "Para que el vehículo se mantenga a la altura correcta sobre la vía.",
+        "Para no desgastar el motor.",
+        "Para ayudar a evitar que el vehículo se roncee.",
+        "Para evitar que el vehículo tienda a irse hacia un lado."
+      ],
+      "correct": 2,
+      "explanation": "La presión correcta de los neumáticos es fundamental para mantener el agarre y evitar que el vehículo se roncee o derrape.",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 6,
+      "question": "¿A qué se debe un alto consumo de combustible?",
+      "options": [
+        "Fallas en el sistema de dirección.",
+        "Aceleraciones en curvas.",
+        "Frecuentes frenadas y aceleraciones.",
+        "Conducción en marchas altas."
+      ],
+      "correct": 2,
+      "explanation": "Las frecuentes frenadas y aceleraciones aumentan significativamente el consumo de combustible.",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 7,
+      "question": "¿Qué es lo que usted nunca debería hacer en una bomba de bencina?",
+      "options": [
+        "Circular por ella",
+        "Fumar",
+        "Comer",
+        "Lavar la motocicleta"
+      ],
+      "correct": 1,
+      "explanation": "Fumar en una bomba de bencina es extremadamente peligroso debido al riesgo de explosión por los vapores de combustible.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 8,
+      "question": "Desenganchar el motor ...",
+      "options": [
+        "permite un mejor control al conductor.",
+        "hace más fácil las maniobras.",
+        "aumenta el consumo de combustible.",
+        "reduce el control del conductor."
+      ],
+      "correct": 3,
+      "explanation": "Desenganchar el motor reduce el control del conductor porque elimina el frenado del motor y la tracción.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 9,
+      "question": "¿Por qué no es bueno desenganchar el motor al ir circulando?",
+      "options": [
+        "Porque ello hace que el vehículo resbale.",
+        "Porque el motor se detendrá.",
+        "Porque no hay frenado del motor.",
+        "Porque el motor funcionará más rápido."
+      ],
+      "correct": 2,
+      "explanation": "Desenganchar el motor elimina el frenado del motor, lo que reduce el control del vehículo y aumenta el riesgo de accidentes.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 10,
+      "question": "¿Cuáles son las 2 principales razones por las cuales no debe desengancharse el motor al ir cuesta abajo?",
+      "options": [
+        "Porque tendrá menor control del frenado y dirección.",
+        "Porque el vehículo agarrará velocidad.",
+        "Porque el consumo de combustible será mayor.",
+        "Porque se gastan y deterioran más los neumáticos."
+      ],
+      "correct": 0,
+      "explanation": "Las dos razones principales son: 1) Menor control del frenado y dirección, y 2) El vehículo agarrará velocidad sin control.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 11,
+      "question": "¿Por qué usted no debería conducir presionando el embrague durante más tiempo que el necesario?",
+      "options": [
+        "Porque reduce su control sobre el vehículo.",
+        "Porque aumenta el desgaste de la caja de cambios.",
+        "Porque aumenta el consumo de combustible.",
+        "Porque reduce el agarre de los neumáticos."
+      ],
+      "correct": 0,
+      "explanation": "Presionar el embrague más tiempo del necesario reduce el control del vehículo porque elimina la conexión entre el motor y las ruedas.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 12,
+      "question": "En un pavimento mojado, ¿influye el estado de los neumáticos en la distancia de frenado de su vehículo?",
+      "options": [
+        "No, la distancia de frenado depende sólo de la velocidad.",
+        "No, porque una vez que se acciona el freno la distancia de frenado es siempre la misma para cada vehículo.",
+        "Sí, a mayor desgaste de los neumáticos menor es dicha distancia.",
+        "Sí, porque el mayor o menor desgaste de los neumáticos, entre otros factores, determinará que dicha distancia sea mayor o menor."
+      ],
+      "correct": 3,
+      "explanation": "El estado de los neumáticos influye significativamente en la distancia de frenado, especialmente en pavimento mojado. El desgaste, la presión y el tipo de neumático son factores determinantes.",
+      "category": "Mantenimiento",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 13,
+      "question": "¿Cuáles 2 de las siguientes afirmaciones son verdaderas?",
+      "options": [
+        "Los gases de escape no son peligrosos para la salud de las personas.",
+        "La misión del silenciador es reducir el nivel de ruido.",
+        "Los gases de escape contienen monóxido de carbono, que carece de olor y es incoloro.",
+        "Los vapores de la gasolina son inocuos."
+      ],
+      "correct": 1,
+      "explanation": "Las dos afirmaciones verdaderas son: 1) El silenciador reduce el nivel de ruido, y 2) Los gases de escape contienen monóxido de carbono (incoloro e inodoro).",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 14,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "Una profundidad de 1 mm de los surcos de las bandas de rodamiento de los neumáticos siempre es suficiente para asegurar una buena fricción con el pavimento.",
+        "Un desgaste notorio de la zona central de las bandas de rodamiento de los neumáticos indica que éstos se han usado con muy poco aire.",
+        "Conducir con neumáticos desgastados irregularmente hace más riesgosa la conducción.",
+        "Los rayos sueltos o cortados no influyen mayormente en la seguridad al conducir."
+      ],
+      "correct": 2,
+      "explanation": "Conducir con neumáticos desgastados irregularmente efectivamente hace más riesgosa la conducción porque reduce el agarre y puede causar pérdida de control.",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 15,
+      "question": "¿Qué requisito(s) debe cumplir un casco de motociclista para que sea efectivamente un elemento de seguridad?",
+      "options": [
+        "Debe ser del tipo integral.",
+        "Debe tener una visera o mica sin manchas ni rayas.",
+        "Debe ser del tamaño adecuado, de modo que quede bien ajustado.",
+        "No debe haber sufrido un impacto fuerte."
+      ],
+      "correct": 0,
+      "explanation": "Todas las opciones son correctas. Un casco efectivo debe ser integral, tener visera limpia, ajuste correcto y no haber sufrido impactos.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 16,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "Es conveniente que el motociclista use un traje de seguridad, de cuero y con protecciones especiales para la espalda, rodillas, hombros y codos.",
+        "La mejor protección para los pies y pantorrillas de un motociclista la puede brindar un buen par de botas de seguridad.",
+        "No es conveniente que un motociclista use guantes de cuero.",
+        "Los cascos de buena calidad tienen fecha de vencimiento."
+      ],
+      "correct": 0,
+      "explanation": "Las afirmaciones verdaderas son: 1) Usar traje de seguridad con protecciones, 2) Botas de seguridad para pies y pantorrillas, y 3) Los cascos de calidad tienen fecha de vencimiento.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 17,
+      "question": "¿Qué elementos de su vehículo debe mantener usted limpios?",
+      "options": [
+        "Las luces",
+        "Los espejos",
+        "Los neumáticos"
+      ],
+      "correct": 0,
+      "explanation": "Debe mantener limpios las luces y los espejos para garantizar la visibilidad y seguridad en la conducción.",
+      "category": "Mantenimiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 18,
+      "question": "Los motociclistas son más vulnerables que los conductores de automóviles. De las siguientes razones, ¿cuál es la que más influye en ello?",
+      "options": [
+        "Circulan a velocidades más altas.",
+        "Efectúan los virajes a mayor velocidad.",
+        "Se ven más afectados por las condiciones y estado de la carpeta de rodado.",
+        "Pueden acelerar más rápido que los autos."
+      ],
+      "correct": 2,
+      "explanation": "Los motociclistas son más vulnerables principalmente porque se ven más afectados por las condiciones del pavimento, baches, aceite, agua, etc.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 19,
+      "question": "Suponga que en una ocasión, su distancia de reacción es de 10 metros, su distancia de frenado es de 8 metros, y su distancia de detención (distancia de reacción más distancia de frenado) es de 18 metros. ¿Cuál sería su distancia de detención si sigue conduciendo en calzada de idénticas características y condiciones, pero aumenta al doble su velocidad?",
+      "options": [
+        "46 metros",
+        "52 metros",
+        "64 metros",
+        "78 metros"
+      ],
+      "correct": 1,
+      "explanation": "Al duplicar la velocidad, la distancia de reacción se duplica (20m) y la distancia de frenado se cuadruplica (32m), dando un total de 52 metros.",
+      "category": "Velocidad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 20,
+      "question": "¿Cuál de las siguientes afirmaciones es falsa cuando usted aumenta su velocidad de 30 km/h a 60 km/h?",
+      "options": [
+        "Se duplica la energía cinética.",
+        "Se cuadruplica la energía cinética.",
+        "Se duplica la distancia de reacción.",
+        "Se cuadruplica la distancia de frenado."
+      ],
+      "correct": 0,
+      "explanation": "La afirmación falsa es que se duplica la energía cinética. En realidad, al duplicar la velocidad, la energía cinética se cuadruplica (es proporcional al cuadrado de la velocidad).",
+      "category": "Velocidad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 21,
+      "question": "El auto azul circula a 70 km/h y el rojo a 90 km/h. ¿Dónde es más probable que sus conductores estimen el punto en que se producirá el encuentro de ambos vehículos?",
+      "options": [
+        "El conductor del auto rojo estima que dicho punto será el 3.",
+        "El conductor del auto rojo estima que dicho punto será el 2.",
+        "El conductor del auto azul estima que dicho punto será el 1.",
+        "El conductor del auto azul estima que dicho punto será el 3."
+      ],
+      "correct": 0,
+      "explanation": "Los conductores estiman diferentes puntos de encuentro basándose en sus velocidades relativas. El auto rojo (más rápido) estima el punto 3, mientras que el auto azul (más lento) también estima el punto 3, pero desde su perspectiva.",
+      "category": "Velocidad",
+      "difficulty": "avanzada",
+      "image": "img/img_q21.png"
+    },
+    {
+      "id": 22,
+      "question": "¿Qué distancia de detención tiene un tren que circula a alrededor de 100 km/h?",
+      "options": [
+        "Aproximadamente 100 metros.",
+        "Aproximadamente 200 metros.",
+        "Entre 800 y 1000 metros.",
+        "Más de 2000 metros."
+      ],
+      "correct": 2,
+      "explanation": "Los trenes tienen una distancia de detención muy larga debido a su masa y velocidad. A 100 km/h, un tren necesita entre 800 y 1000 metros para detenerse completamente.",
+      "category": "Velocidad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 23,
+      "question": "¿Qué es lo más importante para evitar chocar al vehículo que va adelante?",
+      "options": [
+        "Asegurarse de que sus frenos sean eficientes.",
+        "Conducir a una velocidad constante.",
+        "Mantener una adecuada distancia de separación entre vehículos.",
+        "Tener neumáticos en muy buen estado."
+      ],
+      "correct": 2,
+      "explanation": "Mantener una distancia de separación adecuada es la medida más efectiva para evitar colisiones por alcance, ya que proporciona tiempo y espacio para reaccionar y frenar.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 24,
+      "question": "¿Qué sucede con su distancia de frenado cuando usted aumenta al doble la velocidad?",
+      "options": [
+        "Se mantiene igual.",
+        "Se duplica.",
+        "Se triplica.",
+        "Se cuadruplica."
+      ],
+      "correct": 3,
+      "explanation": "Al duplicar la velocidad, la distancia de frenado se cuadruplica debido a que la energía cinética es proporcional al cuadrado de la velocidad (E = ½mv²).",
+      "category": "Velocidad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 25,
+      "question": "Usted está descendiendo una pendiente muy larga. ¿Qué debería hacer para ayudar a controlar la velocidad de su vehículo?",
+      "options": [
+        "Tomar el manubrio firmemente.",
+        "Seleccionar una marcha baja.",
+        "Seleccionar neutro.",
+        "Presionar el embrague."
+      ],
+      "correct": 1,
+      "explanation": "Seleccionar una marcha baja permite aprovechar el frenado del motor, reduciendo la dependencia de los frenos y evitando su sobrecalentamiento en pendientes largas.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 26,
+      "question": "Usted está virando hacia la derecha en un camino resbaladizo y la rueda trasera de su vehículo resbala hacia la izquierda. ¿Qué debería hacer usted?",
+      "options": [
+        "Frenar firmemente y no girar el manubrio.",
+        "Guiar cuidadosamente hacia la izquierda.",
+        "Usar el embrague y frenar firmemente.",
+        "Girar hacia la derecha."
+      ],
+      "correct": 1,
+      "explanation": "Cuando la rueda trasera resbala hacia la izquierda, debe guiar suavemente hacia la izquierda para corregir el derrape y recuperar el control del vehículo.",
+      "category": "Manejo del vehículo",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 27,
+      "question": "Usted está próximo a descender por una pendiente muy pronunciada. ¿Qué debería hacer para controlar la velocidad de su vehículo?",
+      "options": [
+        "Seleccionar un cambio bajo y usar los frenos cuidadosamente.",
+        "Seleccionar un cambio alto y usar los frenos cuidadosamente.",
+        "Seleccionar un cambio alto y usar los frenos firmemente.",
+        "Seleccionar un cambio bajo y evitar usar los frenos."
+      ],
+      "correct": 0,
+      "explanation": "En pendientes pronunciadas, debe seleccionar una marcha baja para aprovechar el frenado del motor y usar los frenos cuidadosamente para evitar su sobrecalentamiento.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 28,
+      "question": "La distancia de frenado es la distancia que recorre un vehículo desde que se presiona el freno hasta que el vehículo se detiene. De las siguientes variables, ¿cuáles influyen en la distancia de frenado?",
+      "options": [
+        "La velocidad.",
+        "El alumbrado público.",
+        "El estado de los frenos y neumáticos.",
+        "Las condiciones climáticas.",
+        "La hora del día."
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "La velocidad, el estado de los frenos y neumáticos, y las condiciones climáticas son factores que influyen directamente en la distancia de frenado. El alumbrado público y la hora del día no afectan la distancia de frenado.",
+      "category": "Velocidad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 29,
+      "question": "Usted va a 70 km/hr. Aproximadamente, ¿qué distancia recorrerá su vehículo desde el momento en que usted se percata de un peligro que hay más adelante hasta que comienza a frenar?",
+      "options": [
+        "Unos 5 metros.",
+        "Unos 8 metros.",
+        "Unos 20 metros.",
+        "Unos 30 metros."
+      ],
+      "correct": 2,
+      "explanation": "A 70 km/h, con un tiempo de reacción promedio de 1 segundo, el vehículo recorre aproximadamente 20 metros antes de que el conductor comience a frenar.",
+      "category": "Velocidad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 30,
+      "question": "¿Cuál es el tiempo de reacción promedio de un conductor ante un imprevisto?",
+      "options": [
+        "1 segundo",
+        "0.1 minuto",
+        "0.1 segundo",
+        "2 segundos"
+      ],
+      "correct": 0,
+      "explanation": "El tiempo de reacción promedio de un conductor ante un imprevisto es de aproximadamente 1 segundo, tiempo que incluye la percepción, procesamiento y respuesta al estímulo.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 31,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "Quien sobrestima sus habilidades para conducir conduce con frecuencia demasiado rápido.",
+        "Quien sobrestima sus habilidades para conducir crea situaciones de riesgo a menudo.",
+        "Con frecuencia, los muchachos jóvenes sobrestiman sus habilidades, conducen a velocidades excesivas y se ven más involucrados en accidentes que otros.",
+        "Muchos conductores jóvenes muestran deficiencias en su madurez personal."
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Todas las afirmaciones son verdaderas. La sobreestimación de habilidades, especialmente en conductores jóvenes, es un factor de riesgo importante que conduce a comportamientos peligrosos y mayor involucración en accidentes.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 32,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s) en cuanto al desarrollo de la moral de un individuo?",
+      "options": [
+        "Durante la infancia, antes de llegar a la edad escolar, las personas son egocéntricas y piensan sobre todo en ellas mismas.",
+        "Los conocimientos y la experiencia hacen que las personas se vuelvan más comprensivas.",
+        "Como la moral de las personas es algo innato, no se puede cambiar.",
+        "El comportamiento que tiene una persona como conductor muestra cuánto ha avanzado en el desarrollo de su moral."
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Las afirmaciones verdaderas son: 1) En la infancia las personas son egocéntricas, 2) Los conocimientos y experiencia mejoran la comprensión, y 3) El comportamiento como conductor refleja el desarrollo moral. La moral no es innata, se desarrolla.",
+      "category": "Seguridad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 33,
+      "question": "¿Cuáles 2 de las siguientes cualidades de un individuo denotan que ha alcanzado un alto grado de madurez personal?",
+      "options": [
+        "No sobrestima sus habilidades; tiene un buen conocimiento de sí mismo.",
+        "Mantiene su vehículo en muy buen estado.",
+        "Tiene buen conocimiento de las normas que regulan el tránsito.",
+        "Cuenta con que otros pueden cometer errores y los acepta."
+      ],
+      "correct": [0, 3],
+      "explanation": "Las dos cualidades que denotan madurez personal son: 1) No sobrestimar habilidades y tener autoconocimiento, y 2) Contar con que otros pueden cometer errores y aceptarlo. Esto refleja humildad y tolerancia.",
+      "category": "Seguridad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 34,
+      "question": "¿Cuál de las siguientes afirmaciones es correcta en cuanto a la capacidad de reacción de los conductores jóvenes inexpertos, comparados con conductores experimentados cuya edad fluctúa entre 35 y 50 años?",
+      "options": [
+        "Ante situaciones complejas, los conductores jóvenes reaccionan más rápido.",
+        "Los conductores jóvenes reaccionan siempre con mayor rapidez.",
+        "No hay diferencia entre la capacidad de reacción de los conductores jóvenes inexpertos y la de los mayores.",
+        "En situaciones reales, que requieren reacciones complejas, los conductores experimentados reaccionan en un tiempo más corto que los jóvenes inexpertos."
+      ],
+      "correct": 3,
+      "explanation": "En situaciones reales complejas, los conductores experimentados reaccionan más rápido que los jóvenes inexpertos debido a su experiencia y capacidad de anticipación desarrollada con los años.",
+      "category": "Seguridad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 35,
+      "question": "¿Cuál o cuáles característica(s) distingue(n) a un conductor seguro?",
+      "options": [
+        "Conduce con prudencia y hace todo lo posible por evitar accidentes.",
+        "Es considerado y amable con los demás conductores y con los peatones.",
+        "Es respetuoso, no obstaculiza ni perturba al resto.",
+        "Conduce con buen criterio."
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Todas las características distinguen a un conductor seguro: prudencia, consideración, respeto y buen criterio son cualidades fundamentales para una conducción segura y responsable.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 36,
+      "question": "¿Cuáles 2 de los siguientes rasgos son característicos de personas que ceden con facilidad a la presión del grupo?",
+      "options": [
+        "Por lo general, son muy inseguras de sí mismas.",
+        "Sienten temor a ser motivo de bromas y risas de los demás.",
+        "Tienen mayor autonomía y voluntad para defender sus opiniones.",
+        "Son capaces de soportar bromas o que lo tilden de «cobardes» o «mala persona».",
+        "Son muy seguras de sí mismas."
+      ],
+      "correct": [0, 1],
+      "explanation": "Los dos rasgos característicos de personas que ceden a la presión del grupo son: 1) Ser inseguras de sí mismas, y 2) Temer ser motivo de bromas. Esto las hace más vulnerables a la influencia grupal.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 37,
+      "question": "De los siguientes factores que se presentan en los accidentes de tránsito, ¿cuáles son los 2 más frecuentes en los accidentes que ocurren en carreteras viéndose involucrado un solo vehículo?",
+      "options": [
+        "Que el conductor no posea licencia para conducir.",
+        "Que el conductor esté muy cansado o bajo los efectos del alcohol.",
+        "Que el conductor esté bajo los efectos de medicamentos.",
+        "Que el conductor sobrestime sus capacidades y conduzca a exceso de velocidad."
+      ],
+      "correct": [1, 3],
+      "explanation": "Los dos factores más frecuentes en accidentes de un solo vehículo son: 1) Cansancio o efectos del alcohol, y 2) Sobreestimación de capacidades y exceso de velocidad. Ambos afectan el juicio y las capacidades del conductor.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 38,
+      "question": "De los siguientes factores, ¿cuál es el que con mayor frecuencia se presenta en los accidentes de tránsito?",
+      "options": [
+        "Los errores de los conductores.",
+        "Las condiciones climáticas.",
+        "Las condiciones de calles y caminos.",
+        "Las fallas mecánicas."
+      ],
+      "correct": 0,
+      "explanation": "Los errores de los conductores son el factor que con mayor frecuencia se presenta en los accidentes de tránsito, ya que la mayoría de los accidentes se deben a decisiones incorrectas o comportamientos inadecuados del conductor.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 39,
+      "question": "En cuanto al estrés al conducir, ¿cuál de las siguientes afirmaciones es falsa?",
+      "options": [
+        "Un grado demasiado alto de estrés disminuye su campo de atención.",
+        "Un estrés moderado puede contribuir a mejorar su rendimiento.",
+        "Un conductor muy estresado puede tener reacciones de pánico.",
+        "El estrés no influye en absoluto en los actos de un conductor."
+      ],
+      "correct": 3,
+      "explanation": "La afirmación falsa es que el estrés no influye en absoluto en los actos de un conductor. El estrés sí influye significativamente en la conducción, afectando la atención, el juicio y las reacciones.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 40,
+      "question": "¿Qué puede esperarse de un conductor impulsivo?",
+      "options": [
+        "Que reaccione adecuadamente ante cualquier imprevisto.",
+        "Que actúe sin pensar en las consecuencias.",
+        "Que conduzca con excesiva precaución.",
+        "Que efectúe maniobras sorpresivas que sorprendan a los demás."
+      ],
+      "correct": [1, 3],
+      "explanation": "De un conductor impulsivo puede esperarse que: 1) Actúe sin pensar en las consecuencias, y 2) Efectúe maniobras sorpresivas. La impulsividad se caracteriza por la falta de reflexión y comportamientos impredecibles.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 41,
+      "question": "¿Cuál es el mejor consejo para una conducción segura?",
+      "options": [
+        "Mantener el vehículo en muy buenas condiciones.",
+        "Respetar los límites de velocidad.",
+        "Evitar conducir durante la noche.",
+        "Contar siempre con tiempo de sobra al conducir."
+      ],
+      "correct": 3,
+      "explanation": "El mejor consejo para una conducción segura es contar siempre con tiempo de sobra al conducir. Esto reduce la presión, el estrés y permite tomar decisiones más seguras sin apuro.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 42,
+      "question": "¿De cuáles 2 maneras puede usted contribuir con mayor eficacia a la seguridad de tránsito?",
+      "options": [
+        "Contando siempre con tiempo de sobra para conducir.",
+        "Manteniendo su vehículo en condiciones óptimas.",
+        "Evitando conducir durante la noche.",
+        "Conduciendo a la defensiva."
+      ],
+      "correct": [0, 3],
+      "explanation": "Las dos maneras más efectivas de contribuir a la seguridad de tránsito son: 1) Contar siempre con tiempo de sobra, y 2) Conducir a la defensiva. Ambas reducen significativamente el riesgo de accidentes.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 43,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "La capacidad de reacción de una persona se ve afectada con pequeñas concentraciones de alcohol en su organismo.",
+        "Una buena taza de café acelera el proceso mediante el cual el organismo se libera del alcohol.",
+        "Con pequeñas concentraciones de alcohol en el organismo de un individuo, disminuyen ciertas inhibiciones y tiende a sobrestimar sus capacidades.",
+        "La capacidad de interpretación y decisión de un conductor experimentado no se ven afectadas con sólo 2 tragos de licor fuerte."
+      ],
+      "correct": [0, 2],
+      "explanation": "Las afirmaciones verdaderas son: 1) La capacidad de reacción se ve afectada con pequeñas concentraciones de alcohol, y 2) Con alcohol disminuyen las inhibiciones y se tiende a sobrestimar capacidades. El café no acelera la eliminación del alcohol.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 44,
+      "question": "En cuanto a la concentración de alcohol en la sangre de una persona que ingiere la misma cantidad en ocasiones diferentes, ¿cuál de las siguientes afirmaciones es falsa?",
+      "options": [
+        "Aunque la persona beba la misma cantidad de alcohol cada ocasión, la concentración de éste en su sangre puede ser diferente.",
+        "La concentración de alcohol depende de cuánto se come en cada ocasión.",
+        "Entre otros factores, la concentración de alcohol también depende del tiempo que dura la ingestión cada vez.",
+        "Si la cantidad de alcohol ingerida en cada ocasión es exactamente la misma, la concentración de alcohol en la sangre también será la misma."
+      ],
+      "correct": 3,
+      "explanation": "La afirmación falsa es que si la cantidad de alcohol es la misma, la concentración en sangre será la misma. La concentración depende de múltiples factores como el peso, metabolismo, comida, tiempo de ingestión, etc.",
+      "category": "Seguridad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 45,
+      "question": "¿Qué efecto(s) sobre la visión tiene el conducir a unos 100 km/h?",
+      "options": [
+        "A la mayoría de los conductores se les cansa la vista después de conducir más o menos media hora.",
+        "El campo visual se reduce, ya que a esa velocidad se tiende a fijar la mirada recta a lo lejos.",
+        "Resulta más difícil percibir movimientos a los lados de la carretera.",
+        "La visión se adapta automáticamente a la alta velocidad y, por lo tanto, el resto del tránsito se percibe igual que al ir a una velocidad baja."
+      ],
+      "correct": [1, 2],
+      "explanation": "Los efectos sobre la visión al conducir a 100 km/h son: 1) El campo visual se reduce al fijar la mirada lejos, y 2) Es más difícil percibir movimientos laterales. La visión no se adapta automáticamente a la alta velocidad.",
+      "category": "Velocidad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 46,
+      "question": "¿Cuáles son los primeros síntomas de cansancio?",
+      "options": [
+        "Se comienza a sentir calor y agresividad.",
+        "Se comienza a sentir falta de interés y aparecen los bostezos.",
+        "Se comienza a sentir dificultad para mantener la dirección.",
+        "Se comienza a sentir que los párpados se cierran."
+      ],
+      "correct": 1,
+      "explanation": "Los primeros síntomas de cansancio son la falta de interés y la aparición de bostezos. Estos son signos tempranos que indican que el conductor está comenzando a fatigarse.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 47,
+      "question": "El modo como percibimos una situación depende, entre otros factores, de nuestras experiencias anteriores, intereses, expectativas y necesidades. En este contexto, ¿cuál de las siguientes afirmaciones es falsa?",
+      "options": [
+        "Un conductor que siente apremio por falta de tiempo puede subestimar los riesgos de la alta velocidad.",
+        "Los conductores ven principalmente aquello que les interesa en un momento y lo que esperan ver.",
+        "Varios conductores que ven lo mismo perciben las situaciones de tránsito también del mismo modo.",
+        "También a los conductores experimentados a veces les pasan inadvertidas informaciones importantes."
+      ],
+      "correct": 2,
+      "explanation": "La afirmación falsa es que varios conductores que ven lo mismo perciben las situaciones del mismo modo. Cada conductor percibe según sus experiencias, intereses y expectativas, por lo que las percepciones pueden ser diferentes.",
+      "category": "Seguridad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 48,
+      "question": "De las siguientes afirmaciones, ¿cuál o cuáles es(son) verdadera(s)?",
+      "options": [
+        "El factor humano es el principal causante de que surjan situaciones de riesgo en el tránsito.",
+        "La falta de atención a las condiciones del tránsito es una de las principales causa de accidentes.",
+        "Un conductor que va con mucha prisa tiende a subestimar los riesgos.",
+        "Estar pendiente de la música de su \"personal stereo\" aumenta las posibilidades de pasar por alto circunstancias importantes en el tránsito."
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Las afirmaciones verdaderas son: 1) El factor humano es la principal causa de situaciones de riesgo, 2) La falta de atención es una causa principal de accidentes, y 3) Estar pendiente de música aumenta las posibilidades de pasar por alto circunstancias importantes.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 49,
+      "question": "En relación con la técnica de observación de los conductores inexpertos, ¿cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "Los conductores inexpertos concentran su mirada en puntos fijos.",
+        "Los conductores inexpertos aprovechan al máximo su visión periférica.",
+        "Los conductores inexpertos observan el entorno que los rodea en forma más sistemática que los conductores experimentados.",
+        "No hay mayores diferencias en cuanto a cómo observan el entorno los conductores inexpertos y los con gran experiencia."
+      ],
+      "correct": 0,
+      "explanation": "La afirmación verdadera es que los conductores inexpertos concentran su mirada en puntos fijos. Los conductores experimentados tienen una técnica de observación más amplia y sistemática.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 50,
+      "question": "De las siguientes afirmaciones, ¿cuál o cuáles es(son) verdadera(s)?",
+      "options": [
+        "El tener una buena visión es imprescindible para poder captar las diversas situaciones que se presentan a conducir.",
+        "Existe un alto riesgo de que los conductores cuyo campo visual no es lo suficientemente amplio, no alcancen a reaccionar a tiempo ante peligros provenientes de los lados.",
+        "Si usted conduce durante un largo tiempo en condiciones difíciles, puede tener problemas para apreciar correctamente lo que ve y, por lo tanto, tomar decisiones equivocadas.",
+        "Las personas jóvenes son más sensibles a la luz deslumbrante que los mayores."
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Las afirmaciones verdaderas son: 1) La buena visión es imprescindible para captar situaciones, 2) Un campo visual limitado impide reaccionar a peligros laterales, y 3) Conducir mucho tiempo en condiciones difíciles puede causar problemas de apreciación visual.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 51,
+      "question": "¿Cuándo es alto el riesgo de interpretar erróneamente la realidad al conducir?",
+      "options": [
+        "Cuando va por un camino montañoso y con muchas sinuosidades, y la visibilidad es muy mala.",
+        "Cuando usted está muy cansado, especialmente si conduce de noche.",
+        "Cuando va por carretera y existe una densa niebla.",
+        "Cuando con buenas condiciones de visibilidad usted conduce por una carretera con buenas demarcaciones viales."
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "El riesgo de interpretar erróneamente la realidad es alto cuando: 1) Hay malas condiciones de visibilidad en caminos sinuosos, 2) Se está muy cansado, especialmente de noche, y 3) Existe niebla densa. Las buenas condiciones reducen este riesgo.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 52,
+      "question": "¿Qué debería hacer usted si está tomando un remedio para la tos y no está seguro si éste puede afectar su conducción?",
+      "options": [
+        "No conducir tan pronto haya ingerido el remedio, sino que esperar un rato.",
+        "Conducir siempre que se sienta bien.",
+        "Preguntar a su doctor.",
+        "Solicitar consejo a un amigo o pariente."
+      ],
+      "correct": 2,
+      "explanation": "Si no está seguro si un medicamento puede afectar su conducción, debe preguntar a su doctor. Los profesionales médicos son quienes mejor pueden evaluar los efectos de los medicamentos en la capacidad de conducción.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 53,
+      "question": "Usted está tomando unos remedios que probablemente afectarán su conducción. ¿Qué debería hacer?",
+      "options": [
+        "Limitar su conducción sólo a viajes esenciales.",
+        "Conducir acompañado por alguien que posea una licencia de conducir.",
+        "Conducir sólo distancias cortas.",
+        "Solicitar consejo médico antes de conducir."
+      ],
+      "correct": 3,
+      "explanation": "Si está tomando medicamentos que probablemente afectarán su conducción, debe solicitar consejo médico antes de conducir. El médico puede evaluar los riesgos y dar recomendaciones específicas.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 54,
+      "question": "Su doctor le ha recetado un tratamiento. ¿Por qué usted debe consultarle si puede conducir o no?",
+      "options": [
+        "Porque algunas medicinas pueden hacer que sus reacciones sean más lentas.",
+        "Porque las drogas influyen en su conducción al hacer más rápidas sus reacciones.",
+        "Porque en caso de accidente no estaría cubierto por el Seguro Obligatorio.",
+        "Porque las medicinas que está tomando pueden afectar su visión."
+      ],
+      "correct": 0,
+      "explanation": "Debe consultar al doctor porque algunas medicinas pueden hacer que las reacciones sean más lentas, lo que afecta directamente la capacidad de conducción y aumenta el riesgo de accidentes.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 55,
+      "question": "Si usted ha ingerido alcohol, ¿cuál o cuáles son los efectos más probables?",
+      "options": [
+        "Su capacidad de coordinación se reducirá.",
+        "Su autoconfianza se incrementará.",
+        "Presentará ceguera al color.",
+        "Sus reacciones serán más rápidas.",
+        "Su juicio empeorará.",
+        "Su capacidad de concentración aumentará."
+      ],
+      "correct": [0, 1, 4],
+      "explanation": "Los efectos más probables del alcohol son: 1) Reducción de la capacidad de coordinación, 2) Incremento de la autoconfianza (falsa sensación), y 3) Empeoramiento del juicio. El alcohol no mejora las reacciones ni la concentración.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 56,
+      "question": "¿Cómo afecta el consumo de alcohol a su conducción?",
+      "options": [
+        "Acelera sus reacciones.",
+        "Aumenta su lucidez.",
+        "Mejora su coordinación.",
+        "Reduce su concentración."
+      ],
+      "correct": 3,
+      "explanation": "El consumo de alcohol reduce la concentración, lo que afecta directamente la capacidad de conducción. También reduce la coordinación, las reacciones y el juicio, pero no los mejora.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 57,
+      "question": "¿Qué consejo daría usted a un conductor que ha ingerido bebidas alcohólicas en una fiesta?",
+      "options": [
+        "Que se vuelva a casa en taxi.",
+        "Que tome una taza de café cargado y luego conduzca a casa.",
+        "Que se vuelva a casa conduciendo lenta y muy cuidadosamente.",
+        "Que espere un rato antes de irse conduciendo a casa."
+      ],
+      "correct": 0,
+      "explanation": "El mejor consejo es que se vuelva a casa en taxi. El café no elimina el alcohol del organismo, y conducir con alcohol, aunque sea lentamente, sigue siendo peligroso e ilegal.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 58,
+      "question": "Un conductor hace algo que a usted le molesta. ¿Qué debería hacer usted?",
+      "options": [
+        "Hacerle saber cómo se siente.",
+        "Encender y apagar sus luces repetidamente.",
+        "Tratar de no reaccionar.",
+        "Tocar la bocina."
+      ],
+      "correct": 2,
+      "explanation": "Ante un conductor que hace algo molesto, debe tratar de no reaccionar. Reaccionar con agresividad puede escalar la situación y crear un riesgo mayor. Es mejor mantener la calma y la distancia.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 59,
+      "question": "Usted está a punto de conducir, pero se siente enfermo. Usted debería ...",
+      "options": [
+        "tomar una medicina antes de conducir.",
+        "acortar el viaje si puede.",
+        "no manejar.",
+        "prometerse a sí mismo que se va a acostar tan pronto haya llegado a casa."
+      ],
+      "correct": 2,
+      "explanation": "Si se siente enfermo, no debe manejar. Conducir enfermo puede afectar el juicio, las reacciones y la concentración, aumentando significativamente el riesgo de accidentes.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 60,
+      "question": "En relación con el cansancio y la conducción, de las siguientes afirmaciones, ¿cuál es falsa?",
+      "options": [
+        "El cansancio es una causa importante de los accidentes que se registran en carreteras.",
+        "Un conductor cansado ve empeorada su capacidad de reacción.",
+        "Si un conductor está cansado, lo mejor es que escuche música de un \"personal stereo\".",
+        "El desorientarse y plantearse preguntas tales como, ¿pasé ya la ciudad X o aún no?, es un síntoma de cansancio."
+      ],
+      "correct": 2,
+      "explanation": "La afirmación falsa es que escuchar música de un \"personal stereo\" es lo mejor si un conductor está cansado. La música puede distraer y no combate el cansancio. Lo mejor es detenerse y descansar.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 61,
+      "question": "Usted comienza a sentir cansancio en un viaje. ¿Qué debería hacer?",
+      "options": [
+        "Detenerse y comer una gran comida.",
+        "Detenerse inmediatamente y respirar profundo.",
+        "Terminar el viaje y después dormir.",
+        "Detenerse y dormir una pequeña siesta o detenerse y tomar un poco de café."
+      ],
+      "correct": 3,
+      "explanation": "Ante el cansancio, debe detenerse y dormir una pequeña siesta o tomar un poco de café. El descanso es la mejor forma de combatir el cansancio. Comer mucho puede empeorar la somnolencia.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 62,
+      "question": "¿Qué precauciones debe tomar un conductor cuando asiste a un evento social?",
+      "options": [
+        "Beber bastante café después de ingerir bebidas alcohólicas.",
+        "Evitar circular por calles de mucho tráfico después de beber alcohol.",
+        "Evitar beber alcohol con el estómago vacío.",
+        "Evitar consumir alcohol."
+      ],
+      "correct": 3,
+      "explanation": "La mejor precaución es evitar consumir alcohol. Si va a conducir, no debe beber alcohol en absoluto. El café no elimina el alcohol del organismo.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 63,
+      "question": "De los siguientes efectos, ¿cuál no es consecuencia del consumo de alcohol antes de conducir?",
+      "options": [
+        "Falsa sensación de confianza.",
+        "Mayor conciencia del peligro.",
+        "Menor control del vehículo.",
+        "Escaso juicio de la velocidad."
+      ],
+      "correct": 1,
+      "explanation": "La mayor conciencia del peligro NO es consecuencia del alcohol. El alcohol reduce la conciencia del peligro, no la aumenta. Los otros efectos sí son consecuencias del alcohol.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 64,
+      "question": "De las siguientes capacidades de un individuo, ¿cuál de ellas no se ve afectada por el consumo de alcohol?",
+      "options": [
+        "La percepción de colores.",
+        "El juicio acerca de la velocidad.",
+        "Los tiempos de reacción.",
+        "La coordinación."
+      ],
+      "correct": 0,
+      "explanation": "La percepción de colores no se ve afectada por el consumo de alcohol. El alcohol sí afecta el juicio de velocidad, los tiempos de reacción y la coordinación, pero no la capacidad de distinguir colores.",
+      "category": "Seguridad",
+      "difficulty": "avanzada"
+    },
+    {
+      "id": 65,
+      "question": "El tiempo que transcurre desde que usted percibe un peligro hasta que actúa se denomina tiempo de reacción. En una emergencia, ¿qué factor influye en su tiempo de reacción?",
+      "options": [
+        "Su estado de salud.",
+        "El estado de la calzada.",
+        "La velocidad de su vehículo.",
+        "Las condiciones climáticas."
+      ],
+      "correct": 0,
+      "explanation": "El estado de salud es el factor que más influye en el tiempo de reacción. Un conductor enfermo, cansado, bajo efectos de alcohol o medicamentos tendrá un tiempo de reacción más lento.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 66,
+      "question": "¿Qué debería hacer el conductor del auto señalado con la flecha?",
+      "options": [
+        "Detenerse y esperar a que el peatón cruce.",
+        "Señalizar con la mano al peatón para que retroceda.",
+        "Continuar conduciendo lentamente.",
+        "Detenerse, pero sólo si vienen más autos detrás suyo."
+      ],
+      "correct": 2,
+      "explanation": "El conductor debe continuar conduciendo lentamente, ya que el peatón ya está cruzando y está en el lado opuesto de la calzada. No es necesario detenerse completamente en esta situación.",
+      "category": "Seguridad",
+      "difficulty": "básica",
+      "image": "img/img_q66.png"
+    },
+    {
+      "id": 67,
+      "question": "Al aproximarse a una curva hacia la izquierda usted debería mantenerse bien a la derecha. ¿Por qué?",
+      "options": [
+        "Para superar el efecto de pendiente de la calzada.",
+        "Para tener una mejor visual sobre el camino.",
+        "Para permitirle el adelantamiento a quienes vienen rápido detrás suyo.",
+        "Para estar en una ubicación más segura en caso que el vehículo se roncee."
+      ],
+      "correct": 1,
+      "explanation": "Al mantenerse bien a la derecha en una curva hacia la izquierda, se obtiene una mejor visual sobre el camino, permitiendo ver más lejos y anticipar cualquier obstáculo o vehículo que venga en sentido contrario.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 68,
+      "question": "Usted conduce por una vía rápida en muy buenas condiciones. Por seguridad, ¿qué distancia debería mantener usted respecto del vehículo que va delante suyo?",
+      "options": [
+        "Un espacio equivalente al que usted recorre en 3 segundos.",
+        "Un espacio igual al largo de un auto.",
+        "3 metros.",
+        "Un espacio igual al largo de 3 autos."
+      ],
+      "correct": 0,
+      "explanation": "En una vía rápida en buenas condiciones, debe mantener una distancia equivalente al espacio que recorre en 3 segundos. Esta es la regla de los 3 segundos, que proporciona tiempo suficiente para reaccionar y frenar si es necesario.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 69,
+      "question": "Usted se aproxima a una curva hacia la izquierda. ¿Qué debería hacer?",
+      "options": [
+        "Mantenerse bien a la derecha ya que así tardará menos en pasar la curva.",
+        "Mantenerse bien a la derecha para tener una mejor visual sobre la curva.",
+        "Mantenerse bien a la izquierda para evitar cualquier obstáculo que pueda haber en la cuneta.",
+        "Mantenerse bien a la izquierda para hacer la curva menos pronunciada."
+      ],
+      "correct": 1,
+      "explanation": "Al aproximarse a una curva hacia la izquierda, debe mantenerse bien a la derecha para tener una mejor visual sobre la curva. Esto permite ver más lejos y anticipar cualquier obstáculo o vehículo que venga en sentido contrario.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 70,
+      "question": "Mire el dibujo. ¿Cuál es el peligro al que usted debe estar más atento(a)?",
+      "options": [
+        "El niño puede cruzar corriendo.",
+        "El vendedor de helados puede poner su vehículo en movimiento.",
+        "El auto estacionado puede ponerse en movimiento.",
+        "El vendedor de helados puede bajarse de su vehículo."
+      ],
+      "correct": 0,
+      "explanation": "El peligro principal es que el niño puede cruzar corriendo. Los niños son impredecibles y pueden salir corriendo hacia la calle sin avisar, especialmente cuando están cerca de vehículos estacionados que pueden obstruir la visibilidad.",
+      "category": "Seguridad",
+      "difficulty": "básica",
+      "image": "img/img_q70.png"
+    },
+    {
+      "id": 71,
+      "question": "¿Cuál es la velocidad máxima permitida en zonas urbanas?",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h",
+        "80 km/h"
+      ],
+      "correct": 0,
+      "explanation": "La velocidad máxima permitida en zonas urbanas es 50 km/h, salvo que se indique lo contrario mediante señalización específica.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 72,
+      "question": "Usted va conduciendo al lado de una fila de autos estacionados. De pronto ve una pelota rebotando en la calzada un poco más adelante. ¿Qué debería hacer usted?",
+      "options": [
+        "Continuar a la misma velocidad, tocando la bocina.",
+        "Continuar a la misma velocidad, pero encendiendo y apagando su luz delantera.",
+        "Detenerse y señalar con la mano para que los niños crucen a recoger la pelota.",
+        "Disminuir la velocidad y estar preparado para detenerse si aparece un niño."
+      ],
+      "correct": 3,
+      "explanation": "Al ver una pelota en la calzada, debe disminuir la velocidad y estar preparado para detenerse, ya que es muy probable que un niño aparezca corriendo tras la pelota. Los niños son impredecibles y pueden salir de entre los autos estacionados.",
+      "category": "Seguridad",
+      "difficulty": "básica",
+      "image": "img/img_q72.png"
+    },
+    {
+      "id": 73,
+      "question": "Al adelantar a animales que van por el camino, usted no debería...",
+      "options": [
+        "acelerar el motor o tocar la bocina.",
+        "cambiar a una marcha más baja.",
+        "usar los señalizadores de viraje.",
+        "tener las luces encendidas."
+      ],
+      "correct": 0,
+      "explanation": "Al adelantar animales, NO debe acelerar el motor ni tocar la bocina, ya que esto puede asustarlos y hacer que se comporten de manera impredecible, aumentando el riesgo de accidentes.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 74,
+      "question": "Al adelantar en un camino a una manada de ovejas, ¿qué hace usted?",
+      "options": [
+        "Deja un espacio lateral suficiente.",
+        "Adelanta rápidamente y sin vacilaciones.",
+        "Conduce lentamente.",
+        "Toca la bocina levemente.",
+        "Está preparado para detenerse."
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "Al adelantar una manada de ovejas debe: 1) Dejar un espacio lateral suficiente, 2) Conducir lentamente, y 3) Estar preparado para detenerse. Los animales pueden moverse de manera impredecible, por lo que se requiere precaución extrema.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 75,
+      "question": "Usted va conduciendo por una calle de dos pistas y de doble sentido de tránsito en la cual hay vehículos estacionados al costado derecho. ¿Por cuáles 3 razones usted debe disminuir su velocidad?",
+      "options": [
+        "Pueden salir vehículos de su estacionamiento.",
+        "Alguien puede abrir una puerta de un auto estacionado.",
+        "Puede activar las alarmas de los automóviles.",
+        "Para poder ser visto con mayor claridad por el tránsito que viene en contra.",
+        "Entre los autos estacionados puede aparecer un niño corriendo."
+      ],
+      "correct": [0, 1, 4],
+      "explanation": "Las 3 razones para disminuir la velocidad son: 1) Pueden salir vehículos de su estacionamiento, 2) Alguien puede abrir una puerta de un auto estacionado, y 3) Entre los autos estacionados puede aparecer un niño corriendo. Estas situaciones requieren precaución extrema.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 76,
+      "question": "¿A qué debe estar especialmente atento el conductor del vehículo indicado con la flecha?",
+      "options": [
+        "Peatones que puedan aparecer sorpresivamente entre autos estacionados para cruzar.",
+        "Autos que abandonen sus lugares de estacionamiento.",
+        "Lugares disponibles para estacionar.",
+        "Puertas de automóviles estacionados que se abran.",
+        "Automóviles que vengan detrás de él."
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Al conducir junto a vehículos estacionados, el conductor debe estar atento a peatones que puedan aparecer repentinamente, autos que salgan de sus estacionamientos y puertas que se abran inesperadamente.",
+      "category": "Seguridad",
+      "difficulty": "intermedia",
+      "image": "img/img_q76.png"
+    },
+    {
+      "id": 77,
+      "question": "¿Qué debería hacer el conductor del auto indicado con la flecha?",
+      "options": [
+        "Hacer señas con la mano a los peatones que están esperando poder cruzar.",
+        "Pasar rápidamente por detrás del peatón que va cruzando la calzada.",
+        "Esperar a que pase el peatón que va por la calzada.",
+        "Decirle al peatón que no debería haber cruzado."
+      ],
+      "correct": 2,
+      "explanation": "El conductor debe esperar a que el peatón termine de cruzar la calzada, respetando siempre la prioridad del peatón en el cruce.",
+      "category": "Seguridad",
+      "difficulty": "básica",
+      "image": "img/img_q77.png"
+    },
+    {
+      "id": 78,
+      "question": "¿Qué debería hacer el conductor del auto señalado con la flecha?",
+      "options": [
+        "Retrocer para salir del cruce.",
+        "Esperar en el mismo lugar hasta tener luz verde.",
+        "Esperar hasta tener luz roja.",
+        "Continuar con precaución."
+      ],
+      "correct": 3,
+      "explanation": "El conductor del vehículo, al encontrarse ya dentro de la intersección y posiblemente bloqueando el paso, debe continuar con precaución para despejar el cruce tan pronto como sea seguro, sin retroceder ni esperar indefinidamente en el medio.",
+      "category": "Seguridad",
+      "difficulty": "intermedia",
+      "image": "img/img_q78.png"
+    },
+    {
+      "id": 79,
+      "question": "¿Cuál es el principal peligro cuando usted sobrepasa al bus que está detenido en la parada?",
+      "options": [
+        "Que usted debe ceder el paso al bus si éste se pone en marcha.",
+        "Que el auto que va adelante puede detenerse para ceder el paso a un peatón.",
+        "Que alguien puede venir corriendo al bus desde el otro lado de la calle.",
+        "Que algún pasajero que se baje del bus puede aparecer repentinamente delante del mismo para cruzar."
+      ],
+      "correct": 3,
+      "explanation": "El principal peligro al sobrepasar un bus detenido en una parada es que los pasajeros que se bajan pueden aparecer repentinamente delante del bus para cruzar la calle, sin percatarse de su presencia.",
+      "category": "Seguridad",
+      "difficulty": "básica",
+      "image": "img/img_q79.png"
+    },
+    {
+      "id": 80,
+      "question": "¿Qué significa la señal que está efectuando el camión?",
+      "options": [
+        "El camión va a disminuir la velocidad y va a detenerse.",
+        "El conductor del camión le está indicando a usted que lo puede adelantar.",
+        "El camión va a virar a la derecha.",
+        "El conductor del camión ha olvidado apagar sus luces indicadoras de viraje."
+      ],
+      "correct": 2,
+      "explanation": "La luz intermitente derecha de un camión indica que el vehículo va a virar a la derecha. Es una señal clara de cambio de dirección.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q80.png"
+    },
+    {
+      "id": 81,
+      "question": "¿Hacia dónde es más importante que usted mire en este momento?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation": "Es más importante mirar hacia el punto C (el auto estacionado en el lado derecho después del paso de peatones), ya que representa el mayor peligro potencial. Los autos estacionados pueden ocultar peatones que puedan cruzar inesperadamente.",
+      "category": "Seguridad",
+      "difficulty": "intermedia",
+      "image": "img/img_q81.png"
+    },
+    {
+      "id": 82,
+      "question": "En esta situación, ¿a cuáles 3 riesgos debe estar usted principalmente atento?",
+      "options": [
+        "Al ciclista que viene en sentido contrario.",
+        "Al tránsito en la intersección que hay más adelante.",
+        "A las puertas de autos que pueden ser abiertas.",
+        "A niños que pueden salir a la calzada por entre los autos.",
+        "A los vehículos que pueden venir detrás suyo."
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "En esta situación, los principales riesgos son: 1) El ciclista que viene en sentido contrario, 2) Las puertas de autos estacionados que pueden abrirse inesperadamente, y 3) Niños que pueden aparecer repentinamente entre los autos estacionados.",
+      "category": "Seguridad",
+      "difficulty": "intermedia",
+      "image": "img/img_q82.png"
+    },
+    {
+      "id": 83,
+      "question": "Usted va conduciendo a 70 km/h que es la velocidad máxima permitida en esta vía. ¿Qué hace en esta situación?",
+      "options": [
+        "Está preparado para actuar ya que alguien puede salir corriendo a la calzada.",
+        "Está preparado para actuar ya que el bus puede ponerse en marcha.",
+        "Frena y cede el paso al bus, si éste está por salir de la parada.",
+        "Sigue conduciendo sin estar preparado para nada en especial, ya que usted tiene dominio de su vehículo."
+      ],
+      "correct": [0, 1],
+      "explanation": "Al conducir cerca de un bus detenido, especialmente a la velocidad máxima permitida, debe estar preparado para dos riesgos principales: 1) Que peatones (especialmente niños) puedan salir corriendo a la calzada desde detrás o delante del bus, y 2) Que el bus pueda reanudar su marcha inesperadamente.",
+      "category": "Seguridad",
+      "difficulty": "intermedia",
+      "image": "img/img_q83.png"
+    },
+    {
+      "id": 84,
+      "question": "En un camino muy transitado usted desea adelantar a un camión con remolque que va lentamente delante suyo, ¿qué debería hacer usted?",
+      "options": [
+        "Mantenerse bien atrás del camión hasta que pueda ver que tiene espacio suficiente como para adelantarlo.",
+        "Esperar atrás del camión hasta que su conductor le indique que puede adelantarlo.",
+        "Encender y apagar sus luces para que quienes vienen en contra le faciliten el adelantamiento.",
+        "Seguir muy de cerca al camión desplazándose permanentemente hacia el centro de la calzada para poder ver hacia adelante."
+      ],
+      "correct": 0,
+      "explanation": "Debe mantenerse bien atrás del camión hasta tener visibilidad completa y espacio suficiente para adelantarlo de manera segura, especialmente en caminos transitados.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 85,
+      "question": "¿Qué consejo(s) daría usted a un motociclista?",
+      "options": [
+        "Que reduzca siempre la velocidad ante la presencia de barro en la calzada.",
+        "Que siempre acelere suavemente antes de ingresar a una curva.",
+        "Que si lleva a un acompañante, éste vaya siempre sentado a horcajadas.",
+        "Que procure ser siempre visible para el resto de los conductores."
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "Los consejos correctos para motociclistas son: 1) Reducir velocidad en barro, 2) Que el acompañante vaya sentado a horcajadas, y 3) Ser siempre visible para otros conductores.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 86,
+      "question": "¿Qué consejo(s) daría usted a un motociclista?",
+      "options": [
+        "Que para protegerse del viento circule, en lo posible, siguiendo muy de cerca a los vehículos de gran tamaño.",
+        "Que al ir detrás de otro vehículo recuerde que hay una zona que no es cubierta por los espejos retrovisores de éste.",
+        "Que es importante que el casco le quede bien ajustado.",
+        "Que reduzca su velocidad ante la presencia de arena en la calzada, especialmente en las curvas."
+      ],
+      "correct": [2, 3],
+      "explanation": "Los consejos correctos son: 1) Que el casco quede bien ajustado para máxima protección, y 2) Reducir velocidad ante arena en la calzada, especialmente en curvas.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 87,
+      "question": "La mayor parte de los accidentes de tránsito se produce en:",
+      "options": [
+        "Carreteras",
+        "Salidas de colegios",
+        "Caminos rurales",
+        "Intersecciones"
+      ],
+      "correct": 3,
+      "explanation": "La mayoría de los accidentes de tránsito ocurren en intersecciones debido a la confluencia de diferentes flujos de tráfico y la necesidad de tomar decisiones rápidas.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 88,
+      "question": "Entre los accidentes de tránsito se distinguen distintos tipos de éstos. En Chile, ¿cuál es el tipo de accidente que origina la mayor cantidad de muertos?",
+      "options": [
+        "Los choques contra obstáculos fijos.",
+        "Las colisiones entre 2 o más vehículos.",
+        "Los atropellos.",
+        "Los volcamientos."
+      ],
+      "correct": 2,
+      "explanation": "En Chile, los atropellos son el tipo de accidente de tránsito que lamentablemente origina la mayor cantidad de muertes, destacando la vulnerabilidad de los peatones.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 89,
+      "question": "Usted llega a una intersección regulada por semáforo que se encuentra en rojo y, al mismo tiempo, un Carabinero le indica que avance, ¿qué debe hacer usted?",
+      "options": [
+        "Detenerse, porque la luz roja se lo está indicando.",
+        "Avanzar, porque las instrucciones de un Carabinero prevalecen sobre las señales del tránsito.",
+        "Avanzar, sólo si detrás suyo no vienen otros vehículos.",
+        "Avanzar, sólo si está seguro que la luz roja está próxima a cambiar."
+      ],
+      "correct": 1,
+      "explanation": "Las instrucciones de un Carabinero (policía de tránsito) siempre prevalecen sobre las señales de tránsito, incluyendo los semáforos. Por lo tanto, debe avanzar.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 90,
+      "question": "¿En qué situación puede usted hacer uso de la bocina de su vehículo?",
+      "options": [
+        "Cuando cede a otro el derecho a vía.",
+        "Cuando saluda a otros usuarios de la vía.",
+        "Cuando trata de prevenir a otros acerca de un peligro.",
+        "Cuando desea manifestar su disgusto."
+      ],
+      "correct": 2,
+      "explanation": "La bocina debe usarse exclusivamente para prevenir un peligro inminente o para advertir a otros usuarios de la vía sobre su presencia en situaciones de riesgo.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 91,
+      "question": "¿Cuándo puede usted hacer sonar la bocina de su motocicleta?",
+      "options": [
+        "Para llamar la atención de un amigo.",
+        "Para que le cedan el paso.",
+        "Para apurar a un conductor que va más lento.",
+        "Para prevenir la ocurrencia de un accidente."
+      ],
+      "correct": 3,
+      "explanation": "Al igual que en otros vehículos, la bocina de una motocicleta debe usarse para prevenir un accidente o advertir sobre un peligro, no para fines recreativos o para apurar a otros.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 92,
+      "question": "Usted se va acercando a un cruce regulado por semáforo. ¿Cuándo no debe usted ingresar al cruce aunque el semáforo esté en verde?",
+      "options": [
+        "Cuando hay peatones esperando para cruzar.",
+        "Cuando pasado el cruce su pista no esté lo suficientemente despejada.",
+        "Cuando usted cree que la luz está próxima a cambiar.",
+        "Cuando usted va a virar a la derecha."
+      ],
+      "correct": 1,
+      "explanation": "No debe ingresar a un cruce, incluso con luz verde, si su pista más allá del cruce no está despejada, ya que podría bloquear la intersección y obstaculizar el tránsito transversal.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 93,
+      "question": "Fuera de la ciudad, usted va por una carretera de doble calzada con dos pistas por sentido. La velocidad máxima permitida es de 100 km/hr. Si usted va a 90 km/hr y no van vehículos delante suyo, ¿por cuál pista circula usted?",
+      "options": [
+        "Por la pista de la izquierda.",
+        "Por la pista de la derecha.",
+        "Por cualquiera de las dos pistas."
+      ],
+      "correct": 1,
+      "explanation": "En carreteras de doble calzada, debe circular por la pista derecha, dejando la pista izquierda libre para adelantamientos y vehículos que circulen a mayor velocidad.",
+      "category": "Velocidad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 94,
+      "question": "En una carretera de doble calzada con dos pistas por sentido, ¿en cuáles 2 de las siguientes situaciones usted usaría la pista izquierda?",
+      "options": [
+        "Cuando va a virar a la izquierda.",
+        "Al pasar a otro vehículo que va más lento.",
+        "Al circular normalmente.",
+        "Al conducir a una velocidad muy baja."
+      ],
+      "correct": [0, 1],
+      "explanation": "La pista izquierda debe usarse únicamente para: 1) Virar a la izquierda, y 2) Adelantar a otros vehículos. No debe usarse para circular normalmente ni a velocidades bajas.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 95,
+      "question": "¿En qué situación retrocede usted con su vehículo en un cruce?",
+      "options": [
+        "Si no hay nadie detrás suyo.",
+        "En ningún momento.",
+        "Sólo si ha quedado detenido sobre el paso de peatones.",
+        "Sólo si recibe indicación expresa de un Carabinero."
+      ],
+      "correct": 3,
+      "explanation": "Retroceder en un cruce está prohibido, excepto cuando un Carabinero lo indique expresamente. En ningún otro caso es permitido retroceder en una intersección.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 96,
+      "question": "Usted se aproxima a un cruce de calles no señalizado. Por la otra calle también se aproxima un vehículo que pretende pasar el cruce. ¿Quién tiene la prioridad para pasar?",
+      "options": [
+        "El vehículo más grande.",
+        "El vehículo que vaya a mayor velocidad.",
+        "El otro vehículo, siempre que él se venga acercando al cruce por el lado derecho suyo.",
+        "El otro vehículo, siempre que él se venga acercando al cruce por el lado izquierdo suyo."
+      ],
+      "correct": 2,
+      "explanation": "En cruces no señalizados, tiene prioridad el vehículo que se aproxima por la derecha del otro. Esta es la regla fundamental de prioridad de paso.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 97,
+      "question": "Cuando dos vehículos van a cruzarse en una intersección en la que no hay señalización alguna, ¿quién debe ceder el paso?",
+      "options": [
+        "El vehículo más pequeño.",
+        "El vehículo que va por la calle de pistas más angostas.",
+        "El que se acerca al cruce por la derecha del otro.",
+        "El que se acerca al cruce por la izquierda del otro."
+      ],
+      "correct": 3,
+      "explanation": "En intersecciones sin señalización, debe ceder el paso el vehículo que se acerca por la izquierda del otro. El vehículo que viene por la derecha tiene prioridad.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 98,
+      "question": "Usted está en una calle de un solo sentido de tránsito y desea virar a la izquierda. ¿Cuál o cuáles de las siguientes afirmaciones es(son) correcta(s)?",
+      "options": [
+        "Usted está bien situado para virar a la izquierda.",
+        "Si después de virar usted volverá a virar nuevamente a la izquierda en el siguiente cruce, lo mejor es que se mantenga en la pista izquierda de la calle hacia la cual está virando.",
+        "Usted nunca puede saber si la calle hacia la cual vira tiene un solo sentido de tránsito o dos. Por eso, siempre debe tomar la pista derecha de la calle hacia la cual vira.",
+        "No es necesario que usted señalice que va a virar."
+      ],
+      "correct": 1,
+      "explanation": "Si después de virar a la izquierda se va a virar nuevamente a la izquierda en el siguiente cruce, es correcto mantenerse en la pista izquierda de la calle hacia la cual está virando para facilitar el siguiente viraje.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia",
+      "image": "img/img_q98.png"
+    },
+    {
+      "id": 99,
+      "question": "¿En cuál o cuáles de las siguientes situaciones puede usted virar a la izquierda sin que siempre deba detenerse antes?",
+      "options": [
+        "Semáforo con luz verde circular.",
+        "Semáforo con flecha verde hacia la izquierda.",
+        "Señal de PARE.",
+        "Señal de CEDA EL PASO."
+      ],
+      "correct": 1,
+      "explanation": "Con un semáforo que muestra una flecha verde hacia la izquierda, puede virar a la izquierda sin detenerse, ya que la flecha indica que el viraje está permitido y no hay conflicto con el tránsito opuesto.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q99.png"
+    },
+    {
+      "id": 100,
+      "question": "¿En cuál o cuáles de las siguientes situaciones puede usted virar a la izquierda sin que siempre deba detenerse antes?",
+      "options": [
+        "Semáforo con luz verde circular.",
+        "Semáforo con flecha verde hacia la izquierda.",
+        "Señal de PARE.",
+        "Señal de CEDA EL PASO."
+      ],
+      "correct": 1,
+      "explanation": "Con un semáforo que muestra una flecha verde hacia la izquierda, puede virar a la izquierda sin detenerse, ya que la flecha indica que el viraje está permitido y no hay conflicto con el tránsito opuesto.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q100.png"
+    },
+    {
+      "id": 101,
+      "question": "Usted va por una calle de doble sentido de tránsito. Para virar a la izquierda, ¿dónde debería ubicarse?",
+      "options": [
+        "Lo más a la derecha posible.",
+        "Justo a la izquierda de la línea de centro de calzada.",
+        "Justo a la derecha de la línea de centro de calzada."
+      ],
+      "correct": 2,
+      "explanation": "Para virar a la izquierda en una calle de doble sentido, debe ubicarse justo a la derecha de la línea de centro de calzada, manteniendo una distancia segura del centro para permitir el viraje sin invadir el carril opuesto.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica",
+      "image": "img/img_q101.png"
+    },
+    {
+      "id": 102,
+      "question": "¿Cuál señalización con el brazo del conductor de un vehículo que va adelante le indica que va a virar a la izquierda?",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": 2,
+      "explanation": "La señalización correcta para viraje a la izquierda es con el brazo izquierdo extendido hacia abajo (opción C). Esta es la señal estándar para indicar viraje a la izquierda.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q102.png"
+    },
+    {
+      "id": 103,
+      "question": "Usted ha alcanzado a un auto al que desea adelantar. ¿Cuáles son las 3 cosas más difíciles de juzgar?",
+      "options": [
+        "La velocidad del auto al que desea adelantar.",
+        "Si es suficientemente ancho el espacio a la izquierda del vehículo que va adelante.",
+        "La distancia al vehículo que viene en sentido contrario.",
+        "La longitud de la distancia de adelantamiento.",
+        "El punto de encuentro con el vehículo que viene en contra."
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "Las 3 cosas más difíciles de juzgar al adelantar son: 1) La velocidad del auto al que desea adelantar, 2) La distancia al vehículo que viene en sentido contrario, y 3) El punto de encuentro con el vehículo que viene en contra.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 104,
+      "question": "Usted va conduciendo su vehículo a 90 km/h que es la velocidad máxima permitida en esa vía. ¿Qué hace usted si a pesar de todo un vehículo desea adelantarlo?",
+      "options": [
+        "Conduce lo más a la derecha posible.",
+        "Se desplaza hacia la berma y circula por ella.",
+        "Enciende y apaga sus luces repetidamente.",
+        "No acelera."
+      ],
+      "correct": [0, 3],
+      "explanation": "Cuando un vehículo desea adelantarlo, debe: 1) Conducir lo más a la derecha posible para facilitar el adelantamiento, y 2) No acelerar para no dificultar la maniobra del otro conductor.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 105,
+      "question": "Usted va por una carretera a 100 km/h. ¿Qué hace usted si a pesar de todo un vehículo que viene atrás desea adelantarlo?",
+      "options": [
+        "Acelera para impedir el adelantamiento.",
+        "Se mantiene lo más a la derecha posible.",
+        "Mantiene o disminuye su velocidad.",
+        "Enciende su intermitente izquierdo en señal de advertencia de que viene un vehículo en contra.",
+        "Se acerca lo más posible hacia la línea de centro de calzada, para impedir el adelantamiento."
+      ],
+      "correct": [1, 2],
+      "explanation": "Cuando un vehículo desea adelantarlo, debe: 1) Mantenerse lo más a la derecha posible para facilitar el adelantamiento, y 2) Mantener o disminuir su velocidad para no dificultar la maniobra.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 106,
+      "question": "Usted desea adelantar. ¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "El camión tiene la obligación de correrse hacia la berma para dejarle a usted más espacio.",
+        "El auto que viene en sentido contrario tiene la obligación de correrse a la berma para aumentar la seguridad.",
+        "El camión está obligado a reducir la velocidad.",
+        "Usted tiene la obligación de esperar a que la pista del sentido contrario esté libre de vehículos para luego adelantar."
+      ],
+      "correct": 3,
+      "explanation": "La única afirmación verdadera es que usted tiene la obligación de esperar a que la pista del sentido contrario esté libre de vehículos para luego adelantar. Los otros vehículos no tienen obligación de facilitar su adelantamiento.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica",
+      "image": "img/img_q106.png"
+    },
+    {
+      "id": 107,
+      "question": "Antes de adelantar a un vehículo de gran tamaño usted debería mantenerse suficientemente atrás de él. ¿Por qué?",
+      "options": [
+        "Para tener una mejor visual hacia adelante sobre la vía.",
+        "Para tener espacio suficiente que le permita acelerar y adelantar en las curvas.",
+        "Para tener espacio suficiente en caso que el vehículo se detenga y retroceda.",
+        "Para poder ver mejor las señales que le pueda hacer su conductor."
+      ],
+      "correct": 0,
+      "explanation": "Debe mantenerse suficientemente atrás de un vehículo de gran tamaño para tener una mejor visual hacia adelante sobre la vía, lo que le permite evaluar mejor las condiciones del tránsito y tomar decisiones más seguras.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 108,
+      "question": "¿Por qué adelantar a un camión es más arriesgado que adelantar a un auto?",
+      "options": [
+        "Porque los camiones pueden detenerse sorpresivamente.",
+        "Porque los camiones son más largos que los autos.",
+        "Porque los frenos de los camiones no son tan buenos.",
+        "Porque los camiones suben las pendientes más lentamente."
+      ],
+      "correct": 1,
+      "explanation": "Adelantar a un camión es más arriesgado que adelantar a un auto porque los camiones son más largos, lo que requiere más tiempo y espacio para completar la maniobra de adelantamiento de manera segura.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 109,
+      "question": "Usted está a punto de adelantar a un vehículo pesado. ¿Qué debería hacer?",
+      "options": [
+        "Tocar la bocina para advertirle al conductor que usted está ahí.",
+        "Mantenerse bien atrás del vehículo para tener una mayor visual.",
+        "Conducir cerca del vehículo con el propósito de adelantarlo rápidamente.",
+        "Encender y apagar sus luces y esperar hasta que el conductor le avise que es seguro adelantar."
+      ],
+      "correct": 1,
+      "explanation": "Antes de adelantar a un vehículo pesado, debe mantenerse bien atrás del vehículo para tener una mayor visual, lo que le permite evaluar mejor las condiciones del tránsito y planificar el adelantamiento de manera segura.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 110,
+      "question": "Usted va conduciendo de día por una zona rural. La calzada tiene pavimento en buen estado y tránsito bidireccional. A menos que alguna señal le indique otra cosa, usted no debe exceder los ...",
+      "options": [
+        "50 km/hr",
+        "90 km/hr",
+        "100 km/hr",
+        "120 km/hr"
+      ],
+      "correct": 2,
+      "explanation": "En zonas rurales con pavimento en buen estado y tránsito bidireccional, la velocidad máxima permitida es de 100 km/hr, a menos que alguna señal indique una velocidad diferente.",
+      "category": "Velocidad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 111,
+      "question": "Usted va conduciendo en la ciudad por una calle con 2 pistas en sentido único de tránsito. A menos que alguna señal le indique otra cosa, usted no debe exceder los ...",
+      "options": [
+        "30 km/hr",
+        "50 km/hr",
+        "60 km/hr",
+        "80 km/hr"
+      ],
+      "correct": 1,
+      "explanation": "La velocidad máxima permitida en zonas urbanas, a menos que una señal indique lo contrario, es de 50 km/hr.",
+      "category": "Velocidad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 112,
+      "question": "Como norma general, antes de tomar una curva cerrada, usted debe ....",
+      "options": [
+        "acelerar para salir cuanto antes de ella.",
+        "acelerar para luego reducir la velocidad mientras vaya saliendo de ella.",
+        "disminuir la velocidad, pero sólo si la calzada está mojada.",
+        "disminuir la velocidad, para luego acelerar gradualmente mientras la va recorriendo."
+      ],
+      "correct": 3,
+      "explanation": "Antes de una curva cerrada, es fundamental reducir la velocidad para mantener el control del vehículo y luego acelerar suavemente a medida que se recorre la curva para salir de ella de forma segura.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 113,
+      "question": "¿En cuál o cuáles situaciones el vehículo está mal estacionado?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation": "El vehículo en la situación A está estacionado demasiado cerca de una esquina o intersección, lo cual es una infracción común de estacionamiento que puede obstruir la visibilidad o el flujo del tráfico.",
+      "category": "Estacionamiento",
+      "difficulty": "intermedia",
+      "image": "img/img_q113.png"
+    },
+    {
+      "id": 114,
+      "question": "¿En cuál o cuáles de las siguientes situaciones el conductor se ha detenido correctamente para recoger un pasajero?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation": "Según la imagen, la situación B muestra una detención que se considera correcta para recoger un pasajero en el contexto de esta pregunta, a pesar de estar sobre un paso de peatones.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica",
+      "image": "img/img_q114.png"
+    },
+    {
+      "id": 115,
+      "question": "¿En cuál o cuáles de estos lugares podría el estacionamiento de su vehículo causar daño u obstrucción a otros usuarios de la vía?",
+      "options": [
+        "Frente a una entrada de autos de una propiedad.",
+        "En o al llegar a una parada de locomoción colectiva.",
+        "En un paso de peatones.",
+        "En un espacio delimitado para estacionar."
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Estacionar frente a una entrada de autos, en una parada de locomoción colectiva o en un paso de peatones puede causar obstrucción o daño a otros usuarios de la vía.",
+      "category": "Estacionamiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 116,
+      "question": "¿En qué circunstancia usted se detendría justo sobre un cruce cebra existente a mitad de cuadra?",
+      "options": [
+        "En ningún momento.",
+        "Cuando no hay peatones esperando para cruzar.",
+        "Durante la noche.",
+        "Cuando ello sea necesario para evitar un accidente."
+      ],
+      "correct": 3,
+      "explanation": "La única circunstancia en la que se permite detenerse sobre un cruce cebra es cuando es absolutamente necesario para evitar un accidente.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 117,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) correcta(s) tratándose de una vía urbana sin señales de tránsito que prohiban o autoricen el estacionamiento o la detención?",
+      "options": [
+        "Usted puede detenerse en doble fila sólo por el tiempo necesario para que baje su acompañante.",
+        "Usted puede detenerse al costado de un bandejón central para permitir la subida de un acompañante.",
+        "Al estacionar, usted debe hacerlo al costado derecho y preocupándose de dejar una distancia de a lo menos 10 m. entre su vehículo y la esquina.",
+        "Usted puede estacionar al costado derecho y a 5 m de la esquina si el cruce se encuentra semaforizado."
+      ],
+      "correct": 2,
+      "explanation": "En vías urbanas sin señalización específica, al estacionar, debe hacerlo al costado derecho y dejar al menos 10 metros de distancia de la esquina para no obstruir la visibilidad ni el tránsito.",
+      "category": "Estacionamiento",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 118,
+      "question": "En una vía urbana de sentido único de tránsito, sin señalización que permita o prohíba el estacionamiento, ¿a qué lado puede estacionar?",
+      "options": [
+        "A ambos lados.",
+        "En ninguno, porque no hay señales que lo permitan.",
+        "Sólo al lado derecho según el sentido del tránsito.",
+        "Sólo al lado izquierdo según el sentido del tránsito."
+      ],
+      "correct": 2,
+      "explanation": "En una vía urbana de sentido único de tránsito, sin señalización específica, se permite estacionar solo al lado derecho según el sentido del tránsito.",
+      "category": "Estacionamiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 119,
+      "question": "¿En cuáles 3 de las siguientes ocasiones debe usted detener siempre su vehículo?",
+      "options": [
+        "Al verse involucrado en un accidente.",
+        "Al enfrentar una señal CEDA EL PASO.",
+        "Al enfrentar una luz roja de un semáforo.",
+        "Ante un cruce cebra en el que no hay peatones cruzando ni esperando para cruzar.",
+        "Cuando un Carabinero se lo solicita."
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "Usted debe detener siempre su vehículo al verse involucrado en un accidente, al enfrentar una señal CEDA EL PASO (si es necesario para ceder el paso), al enfrentar una luz roja de un semáforo, y cuando un Carabinero se lo solicita. Aunque la pregunta pide 3 ocasiones, 4 opciones están resaltadas como correctas.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 120,
+      "question": "¿A cuántos metros de una esquina es lo más cerca que usted puede estacionar?",
+      "options": [
+        "5 metros",
+        "10 metros",
+        "12 metros",
+        "15 metros"
+      ],
+      "correct": 1,
+      "explanation": "La distancia mínima para estacionar de una esquina es de 10 metros, para no obstruir la visibilidad ni el flujo del tránsito.",
+      "category": "Estacionamiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 121,
+      "question": "Como regla general, ¿en cuál o cuáles de los siguientes lugares nunca debe estacionar?",
+      "options": [
+        "En un paso de peatones.",
+        "En un puente.",
+        "A menos de 10 metros de una esquina.",
+        "Al costado derecho de una vía urbana.",
+        "En o al llegar a una parada de locomoción colectiva."
+      ],
+      "correct": [0, 1, 2, 4],
+      "explanation": "Como regla general, nunca debe estacionar en un paso de peatones, en un puente, a menos de 10 metros de una esquina, o en o al llegar a una parada de locomoción colectiva, ya que estos lugares pueden causar obstrucción o peligro.",
+      "category": "Estacionamiento",
+      "difficulty": "básica"
+    },
+    {
+      "id": 122,
+      "question": "¿Qué haría usted ante esta situación?",
+      "options": [
+        "Continúa a la misma velocidad.",
+        "Toca la bocina.",
+        "Pasa el paso de peatones lo más rápido posible.",
+        "Se detiene."
+      ],
+      "correct": 3,
+      "explanation": "Ante un semáforo en rojo para vehículos y un peatón esperando en el cruce, el conductor debe detenerse.",
+      "category": "Seguridad",
+      "difficulty": "básica",
+      "image": "img/img_q122.png"
+    },
+    {
+      "id": 123,
+      "question": "¿Adquiere usted un derecho sobre otros usuarios de la vía cuando utiliza sus luces indicadoras de viraje?",
+      "options": [
+        "Sí, el usar las luces indicadoras de viraje le da a usted preferencia sobre los conductores que van en igual dirección a la suya.",
+        "Sí, y además de darle a usted preferencia le exime de cualquier responsabilidad.",
+        "No, porque usted sólo está advirtiendo su intención de realizar una maniobra que hará cuando sea seguro hacerla.",
+        "Sí, pero sólo en el caso que usted esté tratando de abandonar un estacionamiento al borde de la calzada."
+      ],
+      "correct": 2,
+      "explanation": "Las luces indicadoras de viraje solo comunican una intención, no otorgan derecho de paso. La maniobra debe realizarse solo cuando sea segura.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 124,
+      "question": "Usted se aproxima a un cruce cebra. En la vereda hay peatones esperando cruzar. ¿Qué hace usted?",
+      "options": [
+        "Disminuye la velocidad y se prepara para detenerse.",
+        "Da la pasada a los peatones sólo si éstos son ancianos o niños.",
+        "Usa sus luces para indicarles que pueden pasar.",
+        "Toca la bocina para indicarles que pueden cruzar."
+      ],
+      "correct": 0,
+      "explanation": "Al aproximarse a un cruce cebra con peatones esperando, el conductor debe reducir la velocidad y estar listo para detenerse para ceder el paso.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 125,
+      "question": "Usted está circulando por una vía rápida en buenas condiciones. ¿Cómo puede estar seguro de que lo hace a una distancia adecuada del vehículo que va adelante?",
+      "options": [
+        "La distancia entre usted y el vehículo que va adelante debería ser dos veces el largo de su vehículo.",
+        "La distancia entre usted y el vehículo que va adelante debería ser igual a su distancia de frenado.",
+        "La distancia entre usted y el vehículo que va adelante debería ser a lo menos igual a la que usted recorre en tres segundos.",
+        "La distancia entre usted y el vehículo que va adelante debería ser a lo menos igual a la que usted recorre en un segundo."
+      ],
+      "correct": 2,
+      "explanation": "La regla de los tres segundos es una técnica de conducción defensiva que ayuda a mantener una distancia segura con el vehículo de adelante.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 126,
+      "question": "El conductor detrás suyo le sigue muy de cerca. ¿Qué hace usted?",
+      "options": [
+        "Señaliza a la derecha y le indica con lo mano para que lo adelante.",
+        "Disminuye la velocidad y le permite que lo adelante.",
+        "No hace nada y se mantiene dentro del límite de velocidad.",
+        "Se acerca hacia el centro de la calzada."
+      ],
+      "correct": 2,
+      "explanation": "Si un conductor le sigue muy de cerca, lo más seguro es no hacer nada brusco y mantener su velocidad dentro del límite. Reaccionar de forma agresiva o intentar forzar un adelantamiento puede ser peligroso.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 127,
+      "question": "Usted va conduciendo en una carretera a la velocidad máxima permitida. El conductor que viene detrás suyo está tratando de adelantarlo. ¿Qué hace usted?",
+      "options": [
+        "Se acerca más al vehículo de adelante para que el conductor que viene atrás no tenga espacio suficiente para el adelantamiento.",
+        "Le hace señas al conductor de atrás para que lo adelante, cuando sea seguro hacerlo.",
+        "Acelera para alejarse del conductor de atrás.",
+        "Mantiene o disminuye la velocidad y permite el adelantamiento."
+      ],
+      "correct": 3,
+      "explanation": "Cuando un conductor intenta adelantarlo, usted debe facilitar la maniobra manteniendo o disminuyendo su velocidad, y no acelerar.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 128,
+      "question": "Usted se está aproximando a un cruce cuando sorpresivamente un vehículo ingresa a la vía por la que usted va y se ubica delante suyo. ¿Qué hace usted?",
+      "options": [
+        "Lo esquiva y toca la bocina.",
+        "Disminuye la velocidad y está atento para detenerse.",
+        "Enciende y apaga sus luces y continúa muy cerca detrás de él.",
+        "Acelera pasándolo inmediatamente."
+      ],
+      "correct": 1,
+      "explanation": "Ante una situación inesperada y potencialmente peligrosa, la acción más segura es reducir la velocidad y prepararse para detenerse para evitar una colisión.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 129,
+      "question": "Un espacio entre usted y el vehículo que marcha delante igual a lo que usted recorre en tres segundos es suficiente cuando ...",
+      "options": [
+        "las condiciones climáticas son buenas.",
+        "está lloviendo fuertemente.",
+        "recién ha cesado de llover.",
+        "hay neblina."
+      ],
+      "correct": 0,
+      "explanation": "La regla de los tres segundos es para condiciones normales de conducción. En condiciones adversas (lluvia, neblina, etc.), se debe aumentar la distancia de seguimiento.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 130,
+      "question": "Usted está conduciendo al límite de la velocidad máxima permitida y un conductor intenta adelantarlo. ¿Trataría usted de evitar que lo adelante?",
+      "options": [
+        "No, a menos que sea seguro hacerlo.",
+        "Sí, porque el otro conductor está actuando en forma peligrosa.",
+        "Sí, porque el otro conductor está infringiendo la ley.",
+        "No, en ningún momento."
+      ],
+      "correct": 3,
+      "explanation": "Nunca se debe impedir el adelantamiento de otro vehículo, incluso si usted ya va al límite de velocidad. Es una maniobra peligrosa y puede causar un accidente.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 131,
+      "question": "De los siguientes factores, ¿cuál es el que con mayor frecuencia se presenta en las colisiones por la parte trasera?",
+      "options": [
+        "El conducir demasiado cerca del vehículo que va adelante.",
+        "El cambio repentino de las luces de los semáforos.",
+        "La existencia de peatones que cruzan en áreas muy concurridas.",
+        "El detenerse en todos los cruces."
+      ],
+      "correct": 0,
+      "explanation": "Conducir demasiado cerca del vehículo que va adelante es la causa más frecuente de colisiones por la parte trasera, ya que no permite tiempo suficiente para reaccionar ante frenadas inesperadas.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 132,
+      "question": "Usted está esperando poder incorporarse a una vía principal desde una calle lateral. ¿Por qué razón debería usted poner especial atención a otras motocicletas?",
+      "options": [
+        "Porque generalmente las motocicletas circulan más rápido que los autos.",
+        "Porque las patrullas de Carabineros suelen andar en motocicletas.",
+        "Porque las motocicletas son pequeñas y difíciles de ver.",
+        "Porque las motocicletas tienen el derecho preferente de paso."
+      ],
+      "correct": 2,
+      "explanation": "Las motocicletas son más pequeñas que los automóviles y pueden ser difíciles de detectar, especialmente al incorporarse a una vía principal. Es importante prestar especial atención para evitar accidentes.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 133,
+      "question": "¿Cuál de los siguientes grupos de conductores tiene mayores probabilidades de verse involucrado en un accidente de tránsito?",
+      "options": [
+        "Los que tienen menos de 25 años.",
+        "Los que tienen entre 36 y 45 años.",
+        "Los que tienen entre 46 y 55 años.",
+        "Los que tienen más de 55 años."
+      ],
+      "correct": 0,
+      "explanation": "Los conductores menores de 25 años tienen mayor probabilidad de verse involucrados en accidentes de tránsito debido a la falta de experiencia y tendencia a tomar mayores riesgos.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 134,
+      "question": "En una zona rural, usted va conduciendo por un camino muy angosto. ¿Dónde le resultaría más difícil ver personas a caballo que avanzan delante suyo?",
+      "options": [
+        "Al ir usted bajando un cerro.",
+        "Al ir ellas subiendo un cerro.",
+        "Al ir usted en una curva a la izquierda.",
+        "Al ir usted en una curva a la derecha."
+      ],
+      "correct": 3,
+      "explanation": "En una curva a la derecha, su campo de visión se reduce significativamente, especialmente si el camino es angosto, dificultando ver lo que viene delante.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 135,
+      "question": "Usted va detrás de un camión articulado que se aproxima a un cruce. Su conductor señaliza hacia la derecha pero el vehículo se desplaza hacia la izquierda. ¿Qué debe hacer usted?",
+      "options": [
+        "Advertirle al conductor acerca de su señal equivocada.",
+        "Esperar detrás del camión.",
+        "Denunciar a Carabineros al conductor.",
+        "Pasar al camión por la derecha."
+      ],
+      "correct": 1,
+      "explanation": "Cuando un vehículo grande señaliza una dirección pero se mueve en otra, es probable que esté realizando una maniobra amplia. Es más seguro esperar detrás para evitar un accidente.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia",
+      "image": "img/img_q135.png"
+    },
+    {
+      "id": 136,
+      "question": "En una carretera de doble calzada con 2 pistas por sentido de tránsito, usted desea pasar al vehículo que va delante suyo. Por su espejo retrovisor ve que el auto que viene atrás se está cambiando de pista para sobrepasarlo a usted. ¿Qué debería hacer usted?",
+      "options": [
+        "Señalizar y luego cambiar de pista para sobrepasar.",
+        "Señalizar para indicarle al conductor que viene atrás que usted también desea sobrepasar.",
+        "No señalizar hasta que el auto lo haya pasado."
+      ],
+      "correct": 2,
+      "explanation": "Si otro vehículo ya está iniciando una maniobra de adelantamiento sobre usted, debe permitirle completar su maniobra antes de iniciar la suya. No debe señalizar ni cambiar de pista hasta que el vehículo lo haya pasado.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 137,
+      "question": "Un vehículo emerge sorpresivamente desde una vía lateral situándose delante suyo y obligándolo a frenar fuertemente. ¿Qué hace usted?",
+      "options": [
+        "Enciende y apaga sus luces para manifestarle su enojo.",
+        "Ignora el error y permanece calmado.",
+        "Toca la bocina para demostrar su enojo.",
+        "Lo adelanta dejándolo atrás lo antes posible."
+      ],
+      "correct": 1,
+      "explanation": "Mantener la calma y evitar reacciones agresivas es crucial para la seguridad vial. Ignorar el error y concentrarse en la conducción segura es la mejor opción.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 138,
+      "question": "Usted se detiene ante un cruce cebra. En la vereda hay peatones esperando, pero ellos no comienzan a cruzar. ¿Qué hace usted?",
+      "options": [
+        "Les toca la bocina para apurarlos.",
+        "Tiene paciencia y espera.",
+        "Prosigue su marcha.",
+        "Les hace señas con la mano apurándolos para que crucen."
+      ],
+      "correct": 1,
+      "explanation": "Ante un cruce cebra con peatones esperando, incluso si no comienzan a cruzar de inmediato, el conductor debe tener paciencia y esperar a que lo hagan.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 139,
+      "question": "Cuando el viento sopla muy fuertemente usted necesita tener especial cuidado ...",
+      "options": [
+        "al usar los frenos.",
+        "al comenzar a subir una pendiente.",
+        "al virar hacia un camino angosto.",
+        "al pasar cerca de ciclistas."
+      ],
+      "correct": 3,
+      "explanation": "El viento fuerte puede afectar la estabilidad de los ciclistas, por lo que se debe tener especial cuidado al pasar cerca de ellos.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 140,
+      "question": "En un cruce hay peatones atravesando la calle hacia la cual usted está virando. ¿Qué debe hacer usted?",
+      "options": [
+        "Hacerles señas con la mano para que continúen.",
+        "Tocar la bocina para hacerles notar que usted está ahí.",
+        "Esperar que crucen.",
+        "Pasar rápidamente por delante de ellos."
+      ],
+      "correct": 2,
+      "explanation": "Siempre se debe esperar a que los peatones terminen de cruzar la calle, especialmente si se está virando hacia esa dirección.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 141,
+      "question": "En un cruce hay peatones atravesando la calle hacia la cual usted está virando. ¿Qué hace usted?",
+      "options": [
+        "Espera permitiéndoles que crucen.",
+        "Continúa ya que usted tiene el derecho preferente de paso.",
+        "Les hace señas para que retrocedan.",
+        "Les toca la bocina para advertirles su presencia."
+      ],
+      "correct": 0,
+      "explanation": "Los peatones tienen preferencia en los cruces, por lo que el conductor debe esperar y permitirles el paso.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 142,
+      "question": "¿Dónde debe tener usted especial cuidado con los demás motociclistas?",
+      "options": [
+        "En una estación de servicio.",
+        "En los cruces de calles.",
+        "En las proximidades de un área de servicio.",
+        "Al ingresar a un recinto o área de estacionamientos."
+      ],
+      "correct": 1,
+      "explanation": "Los cruces de calles son puntos de alto riesgo para los motociclistas debido a su menor visibilidad y la complejidad de las maniobras.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 143,
+      "question": "Cuando conduce en la ciudad ¿por qué razón debería usted tener cuidado al cruzarse con un bus que se encuentra detenido en una parada?",
+      "options": [
+        "Porque el bus puede estar en pana.",
+        "Porque el bus puede ponerse en movimiento repentinamente.",
+        "Porque pueden aparecer peatones detrás del bus.",
+        "Porque el bus puede permanecer detenido."
+      ],
+      "correct": 2,
+      "explanation": "Al cruzarse con un bus detenido en una parada, es crucial tener cuidado porque los peatones pueden aparecer inesperadamente desde detrás del bus para cruzar la calzada.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 144,
+      "question": "Usted se encuentra muy próximo a un cruce en el que pretende virar a la derecha. Delante suyo va un ciclista. ¿Qué hace usted?",
+      "options": [
+        "Adelanta al ciclista antes del cruce.",
+        "Rodea al ciclista en el cruce.",
+        "Se mantiene detrás del ciclista hasta que éste haya pasado la intersección.",
+        "Se sitúa al lado del ciclista, sigue en línea recta y desiste de virar."
+      ],
+      "correct": 2,
+      "explanation": "Para garantizar la seguridad, debe mantenerse detrás del ciclista hasta que haya pasado la intersección, evitando maniobras peligrosas en el cruce.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 145,
+      "question": "Usted va conduciendo por un camino de doble tránsito cuando se encuentra con personas que van a caballo delante suyo. ¿Qué es lo primero que usted debería hacer?",
+      "options": [
+        "Desplazarse hacia el centro de la calzada.",
+        "Acelerar alrededor de ellos.",
+        "Señalizar hacia la izquierda.",
+        "Prepararse para reducir la velocidad."
+      ],
+      "correct": 3,
+      "explanation": "Ante la presencia de personas a caballo, lo primero es prepararse para reducir la velocidad para evitar asustar a los animales y reaccionar a tiempo ante cualquier movimiento inesperado.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 146,
+      "question": "¿Cómo debería usted adelantar a personas que van a caballo?",
+      "options": [
+        "Conduciendo lentamente y dejando bastante espacio lateral.",
+        "Pasando cerca de ellas y adelantándolas lo antes posible.",
+        "La velocidad no es importante, pero sí el dejar suficiente espacio lateral.",
+        "Tocando la bocina sólo una vez como señal de advertencia."
+      ],
+      "correct": 0,
+      "explanation": "Al adelantar a personas a caballo, debe hacerlo lentamente y dejando un amplio espacio lateral para no asustar a los animales y garantizar la seguridad de todos.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 147,
+      "question": "Usted va circulando a 65km/h aproximadamente cuando, lamentablemente, atropella a un peatón. A esa velocidad, ..",
+      "options": [
+        "es seguro que el peatón morirá.",
+        "es muy probable que el peatón muera.",
+        "es seguro que el peatón sobrevivirá.",
+        "es muy probable que el peatón sobreviva."
+      ],
+      "correct": 1,
+      "explanation": "A una velocidad de 65 km/h, el riesgo de muerte para un peatón atropellado es extremadamente alto, siendo muy probable que fallezca.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 148,
+      "question": "Usted va siguiendo a un automóvil que es conducido por una persona de edad. Usted debería ...",
+      "options": [
+        "dar por seguro que el conductor manejará muy mal.",
+        "estar consciente de que las reacciones del conductor pueden no ser tan rápidas como las suyas.",
+        "encender y apagar sus luces y adelantarlo.",
+        "mantenerse muy cerca tras él y conducir cuidadosamente."
+      ],
+      "correct": 1,
+      "explanation": "Al seguir a un conductor de edad, es importante ser consciente de que sus reacciones pueden ser más lentas, por lo que se debe mantener una mayor distancia de seguridad y estar preparado para cualquier eventualidad.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 149,
+      "question": "Usted nunca debería intentar adelantar a un ciclista ....",
+      "options": [
+        "justo antes de doblar a la derecha.",
+        "justo antes de doblar a la izquierda.",
+        "recién pasada una intersección.",
+        "en un camino de tierra."
+      ],
+      "correct": 0,
+      "explanation": "Nunca se debe adelantar a un ciclista justo antes de doblar a la derecha, ya que el ciclista podría necesitar esa posición para girar o podría ser impactado al girar el vehículo.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 150,
+      "question": "Cuando adelanta a un ciclista usted debe dejar el máximo espacio lateral posible. ¿Por qué?",
+      "options": [
+        "Porque el ciclista podría cambiar de pista.",
+        "Porque el ciclista podría bajarse de la bicicleta.",
+        "Porque el ciclista podría tener que virar a la izquierda.",
+        "Porque el ciclista podría desviarse bruscamente."
+      ],
+      "correct": 3,
+      "explanation": "Es crucial dejar el máximo espacio lateral posible al adelantar a un ciclista porque este podría desviarse bruscamente debido a irregularidades en la vía, viento, o para evitar obstáculos.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 151,
+      "question": "¿De qué le advierte esta señal?",
+      "options": [
+        "De la posible presencia de escolares.",
+        "De la proximidad de un cruce de peatones.",
+        "De la posible presencia de niños jugando.",
+        "De la proximidad de un parque o plaza."
+      ],
+      "correct": 0,
+      "explanation": "La señal de escolares advierte sobre la posible presencia de escolares en la zona, indicando que se debe circular con especial precaución.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q151.png"
+    },
+    {
+      "id": 152,
+      "question": "Cuando es de noche, al adelantar usted debería...",
+      "options": [
+        "tener mucho cuidado porque nuestra capacidad visual se ve reducida.",
+        "mantener en todo momento sus luces altas.",
+        "tocar 2 veces la bocina antes de desplazarse hacia la pista izquierda.",
+        "estar muy atento a las curvas que pueda tener el camino.",
+        "cambiar de luces altas a bajas repetidas veces antes de iniciar el adelantamiento."
+      ],
+      "correct": [0, 3],
+      "explanation": "Durante la noche, al adelantar se debe tener mucho cuidado por la reducción de la capacidad visual y estar muy atento a las curvas del camino para anticipar cualquier peligro.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 153,
+      "question": "Por una carretera, usted circula detrás de otro vehículo. Si la calzada está mojada, ¿qué espacio de tiempo mínimo mantiene usted respecto del vehículo que va adelante?",
+      "options": [
+        "A lo menos, el equivalente a lo que recorre en 4 segundos.",
+        "El equivalente a lo que recorre en 1 segundo.",
+        "El equivalente a lo que recorre en 2 segundos.",
+        "Como máximo, el equivalente a lo que recorre en 3 segundos."
+      ],
+      "correct": 0,
+      "explanation": "En calzadas mojadas, se debe mantener al menos 4 segundos de distancia respecto al vehículo que va adelante para compensar el aumento en la distancia de frenado.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 154,
+      "question": "Usted está conduciendo de noche y es encandilado por las luces delanteras de un vehículo que se aproxima. En estas circunstancias, ¿qué hace usted?",
+      "options": [
+        "Reduce la velocidad o se detiene.",
+        "Cierra sus ojos.",
+        "Hace parpadear sus luces.",
+        "Aumenta la velocidad."
+      ],
+      "correct": 0,
+      "explanation": "Cuando se es encandilado por las luces de un vehículo que se aproxima, lo más seguro es reducir la velocidad o detenerse hasta recuperar la visión normal.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 155,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones son correctas en cuanto a la conducción durante la noche?",
+      "options": [
+        "En carretera, con luces bajas es posible ver las marcas en el pavimento a 200 m y más.",
+        "Nuestra limitada capacidad para ver de noche aumenta los riesgos de accidentes.",
+        "Nuestra capacidad de apreciar distancias en la noche se ve disminuida.",
+        "El color de las ropas de un peatón influye en que éste pueda ser más o menos visible para los conductores."
+      ],
+      "correct": [1, 3],
+      "explanation": "Durante la noche, nuestra limitada capacidad visual aumenta los riesgos de accidentes, y el color de las ropas de los peatones influye significativamente en su visibilidad para los conductores.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 156,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) correcta(s) en cuanto a la conducción nocturna en un camino rural?",
+      "options": [
+        "Al cruzarse con otro vehículo siempre hay que poner luces bajas para no encandilar a su conductor.",
+        "Al acercarse por atrás a otro vehículo hay que poner luces bajas.",
+        "Al cruzarse con un ciclista no es necesario poner luces bajas.",
+        "Si el camino es ancho no es necesario poner luces bajas al cruzarse con un vehículo."
+      ],
+      "correct": [0, 1],
+      "explanation": "En caminos rurales durante la noche, siempre se deben usar luces bajas al cruzarse con otros vehículos y al acercarse por atrás para evitar encandilar a otros conductores.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 157,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) correcta(s) en cuanto a la conducción bajo la lluvia?",
+      "options": [
+        "Cuando los neumáticos son nuevos no hay riesgo de que éstos patinen a consecuencia del agua en la calzada.",
+        "Independientemente del estado de los neumáticos, el riesgo de que éstos patinen es mayor mientras mayor es la velocidad.",
+        "El riesgo de que los neumáticos patinen es menor cuando recién ha comenzado a llover.",
+        "Cuando los frenos están buenos el riesgo de patinaje no existe."
+      ],
+      "correct": 1,
+      "explanation": "Independientemente del estado de los neumáticos, el riesgo de patinaje aumenta significativamente con la velocidad en condiciones de lluvia.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 158,
+      "question": "¿Cuáles son las 2 causas más comunes de los resbalones ante la existencia de agua en la calzada?",
+      "options": [
+        "Frenos en mal estado.",
+        "Neumáticos desgastados.",
+        "Exceso de velocidad en relación a las condiciones de la calzada.",
+        "Fallas en el sistema de dirección."
+      ],
+      "correct": [1, 2],
+      "explanation": "Las dos causas más comunes de resbalones en calzadas mojadas son los neumáticos desgastados y el exceso de velocidad en relación a las condiciones de la calzada.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 159,
+      "question": "Viajando de noche usted es encandilado por las luces de un vehículo que viene en sentido contrario, ¿qué debería hacer usted?",
+      "options": [
+        "Acelerar para alejarse pronto de lo que lo encandila.",
+        "Poner luces delanteras altas.",
+        "Poner su mano sobre sus ojos.",
+        "Bajar la velocidad y eventualmente detenerse."
+      ],
+      "correct": 3,
+      "explanation": "Cuando se es encandilado por las luces de un vehículo que viene en sentido contrario, lo más seguro es bajar la velocidad y eventualmente detenerse hasta recuperar la visión.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 160,
+      "question": "Conduciendo de noche usted se ve encandilado por las luces de un vehículo que viene en sentido contrario, ¿qué debería hacer usted?",
+      "options": [
+        "Frenar fuerte.",
+        "Acelerar para alejarse rápido del vehículo que lo encandila.",
+        "Hacer parpadear sus luces.",
+        "Bajar la velocidad o detenerse."
+      ],
+      "correct": 3,
+      "explanation": "Al ser encandilado por las luces de un vehículo que viene en sentido contrario, la respuesta más segura es bajar la velocidad o detenerse hasta recuperar la visión normal.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 161,
+      "question": "Al frenar en una calzada mojada su vehículo comienza a patinar. ¿Qué es lo primero que usted debería hacer?",
+      "options": [
+        "Soltar el freno completamente.",
+        "Acelerar.",
+        "Apretar con más fuerza el freno.",
+        "Presionar el embrague."
+      ],
+      "correct": 0,
+      "explanation": "Cuando el vehículo comienza a patinar en una calzada mojada, lo primero que se debe hacer es soltar el freno completamente para recuperar la adherencia de las ruedas.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 162,
+      "question": "¿Cómo puede usted evitar que los neumáticos patinen cuando la calzada está con hielo?",
+      "options": [
+        "Manteniéndose siempre en primera.",
+        "Frenando si las ruedas comienzan a patinar.",
+        "Conduciendo lentamente en la marcha más alta posible.",
+        "Conduciendo en neutro."
+      ],
+      "correct": 2,
+      "explanation": "Para evitar que los neumáticos patinen en calzadas con hielo, se debe conducir lentamente en la marcha más alta posible, lo que reduce la fuerza de tracción y previene el patinaje.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 163,
+      "question": "Cuando la calzada está con hielo la distancia de frenado puede ser ...",
+      "options": [
+        "2 veces la distancia normal.",
+        "5 veces la distancia normal.",
+        "7 veces la distancia normal.",
+        "10 veces la distancia normal."
+      ],
+      "correct": 3,
+      "explanation": "En calzadas con hielo, la distancia de frenado puede ser hasta 10 veces mayor que en condiciones normales debido a la falta de adherencia.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 164,
+      "question": "Al conducir con neblina a la luz del día, ¿qué luz enciende usted?",
+      "options": [
+        "La luz delantera baja.",
+        "La luz delantera alta.",
+        "Las luces intermitentes de viraje."
+      ],
+      "correct": 0,
+      "explanation": "Al conducir con neblina durante el día, se debe usar la luz delantera baja para mejorar la visibilidad sin encandilar a otros conductores.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 165,
+      "question": "Al conducir sobre una calzada con hielo usted siente la dirección de su vehículo más liviana. ¿Por qué sucede esto?",
+      "options": [
+        "Porque los neumáticos tienen menos adherencia a la calzada.",
+        "Porque los neumáticos tienen más adherencia a la calzada.",
+        "Porque los neumáticos están demasiado blandos.",
+        "Porque los neumáticos están demasiado duros."
+      ],
+      "correct": 0,
+      "explanation": "En calzadas con hielo, la dirección se siente más liviana porque los neumáticos tienen menos adherencia a la superficie, reduciendo la resistencia al giro.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 166,
+      "question": "¿Cuándo es su distancia de detención total mucho más larga?",
+      "options": [
+        "Cuando hay neblina.",
+        "Cuando es de noche.",
+        "Cuando está lloviendo.",
+        "Cuando la temperatura es alta."
+      ],
+      "correct": 2,
+      "explanation": "La distancia de detención total es mucho más larga cuando está lloviendo debido a la reducción de adherencia entre los neumáticos y la calzada mojada.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 167,
+      "question": "¿Cómo puede usted evitar que su vehículo patine cuando la calzada está cubierta con una capa de hielo?",
+      "options": [
+        "Usando el freno si las ruedas comienzan a resbalar.",
+        "Conduciendo a una velocidad baja en el cambio más alto posible.",
+        "Frenando suave y repetidamente.",
+        "Conduciendo en un cambio bajo todo el tiempo."
+      ],
+      "correct": 1,
+      "explanation": "Para evitar patinaje en calzadas con hielo, se debe conducir a baja velocidad en el cambio más alto posible, lo que reduce la fuerza de tracción y previene el deslizamiento.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 168,
+      "question": "Usted está conduciendo bajo mucha lluvia y repentinamente siente la dirección muy liviana. ¿Qué hace usted para tener nuevamente el control de su vehículo?",
+      "options": [
+        "Cambia a una marcha más baja.",
+        "Frena levemente para reducir la velocidad.",
+        "Guía el vehículo por la parte más seca de la calzada.",
+        "Suelta el acelerador."
+      ],
+      "correct": 3,
+      "explanation": "Cuando se siente la dirección muy liviana bajo mucha lluvia, lo primero que se debe hacer es soltar el acelerador para reducir la velocidad y recuperar el control del vehículo.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 169,
+      "question": "Cuando hay nieve lo mejor es conducir manteniéndose en la marcha más alta posible. ¿Por qué es esto?",
+      "options": [
+        "Para reducir rápidamente la velocidad al frenar.",
+        "Para que el patinaje de las ruedas no haga que el motor funcione demasiado rápido.",
+        "Para ayudar a evitar que las ruedas patinen.",
+        "Para dejar disponible una marcha baja en el caso de que las ruedas patinen."
+      ],
+      "correct": 2,
+      "explanation": "Conducir en la marcha más alta posible en condiciones de nieve ayuda a evitar que las ruedas patinen, ya que reduce la fuerza de tracción aplicada a las ruedas.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 170,
+      "question": "¿Cuál es la principal razón por la cual su distancia de detención total es mayor después de una lluvia torrencial?",
+      "options": [
+        "Porque puede que usted no vea las pozas grandes.",
+        "Porque los frenos estarán fríos al estar mojados.",
+        "Porque sus neumáticos tendrán menos adherencia sobre la calzada.",
+        "Porque la visibilidad se reduce."
+      ],
+      "correct": 2,
+      "explanation": "Después de una lluvia torrencial, la distancia de detención es mayor principalmente porque los neumáticos tienen menos adherencia sobre la calzada mojada.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 171,
+      "question": "En una ocasión de mucha neblina usted va detrás de otros vehículos y lleva encendida su luz baja. ¿De qué otra forma puede reducir las probabilidades de verse involucrado en un accidente?",
+      "options": [
+        "Usando su luz alta en vez de baja.",
+        "Circulando a baja velocidad y aumentando la distancia al vehículo que va adelante.",
+        "Manteniéndose cerca del vehículo que va delante suyo.",
+        "Encendiendo sus luces intermitentes."
+      ],
+      "correct": 1,
+      "explanation": "En condiciones de mucha neblina, además de usar luces bajas, se debe circular a baja velocidad y aumentar la distancia al vehículo que va adelante para tener más tiempo de reacción.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 172,
+      "question": "En un pavimento mojado usted va circulando detrás de un vehículo manteniéndose a una distancia segura de él. De pronto es adelantado por otro vehículo que se ubica en el espacio que usted había dejado. ¿Qué debería hacer usted?",
+      "options": [
+        "Encender y apagar sus luces en señal de advertencia.",
+        "Tratar de adelantar tan pronto pueda hacerlo en forma segura.",
+        "Disminuir su velocidad hasta recuperar una distancia segura respecto del que va adelante.",
+        "Mantener su velocidad y esperar a que el vehículo se aleje."
+      ],
+      "correct": 2,
+      "explanation": "Cuando otro vehículo ocupa el espacio de seguridad que se había mantenido, se debe disminuir la velocidad hasta recuperar una distancia segura respecto del vehículo que va adelante.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 173,
+      "question": "¿Cómo puede usted controlar mejor su vehículo al conducir con nieve?",
+      "options": [
+        "Conduciendo en un cambio bajo y sujetando el volante muy firmemente.",
+        "Conduciendo en primera.",
+        "Manteniendo el motor acelerado y presionando el embrague.",
+        "Conduciendo lentamente en el cambio más alto posible."
+      ],
+      "correct": 3,
+      "explanation": "Para controlar mejor el vehículo en nieve, se debe conducir lentamente en el cambio más alto posible para evitar que las ruedas patinen y mantener la tracción.",
+      "category": "Manejo del vehículo",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 174,
+      "question": "Al ir en su motocicleta de noche por una carretera usted debe mantener su foco delantero encendido, a menos que ..",
+      "options": [
+        "su vehículo esté en pana en la berma.",
+        "vayan vehículos muy cerca delante suyo.",
+        "circule a menos de 50 km/hr.",
+        "la carretera esté iluminada."
+      ],
+      "correct": 0,
+      "explanation": "Siempre se debe mantener el foco delantero encendido al conducir una motocicleta de noche, a menos que el vehículo esté detenido en la berma por una avería.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 175,
+      "question": "¿Cómo debería conducir usted en una curva cuando hay hielo en la calzada?",
+      "options": [
+        "Usando el embrague y el freno al mismo tiempo.",
+        "Lenta y suavemente.",
+        "En primera.",
+        "Frenando a medida que va tomando la curva."
+      ],
+      "correct": 1,
+      "explanation": "En una curva con hielo, se debe conducir lenta y suavemente, evitando movimientos bruscos del volante, acelerador o freno para no perder el control del vehículo.",
+      "category": "Manejo del vehículo",
+      "difficulty": "básica"
+    },
+    {
+      "id": 176,
+      "question": "Hay mucha neblina y el auto que viene detrás suyo parece estar muy cerca. ¿Qué debería hacer usted?",
+      "options": [
+        "Hacerle señales de luces.",
+        "Desplazarse hacia el costado derecho y detenerse de inmediato.",
+        "Acelerar y alejarse de él.",
+        "Continuar con mucho cuidado."
+      ],
+      "correct": 3,
+      "explanation": "En condiciones de neblina densa y con un vehículo muy cerca detrás, lo más seguro es continuar con mucho cuidado, manteniendo una velocidad reducida y evitando maniobras bruscas.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 177,
+      "question": "Usted va conduciendo de noche por una carretera cerca de otros vehículos que van delante suyo. ¿Qué luz debería mantener encendida?",
+      "options": [
+        "La luz alta.",
+        "La luz baja."
+      ],
+      "correct": 1,
+      "explanation": "Cuando se conduce de noche y hay otros vehículos delante, se deben usar las luces bajas para evitar encandilar a los conductores que le preceden.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 178,
+      "question": "¿Por qué razón debería usted reducir siempre su velocidad al conducir con neblina?",
+      "options": [
+        "Porque los frenos no funcionan bien.",
+        "Porque las luces neblineras de otros lo pueden encandilar.",
+        "Porque es más difícil ver lo que hay más adelante.",
+        "Porque el motor está más frío."
+      ],
+      "correct": 2,
+      "explanation": "La razón principal para reducir la velocidad en neblina es que la visibilidad se reduce drásticamente, haciendo más difícil ver obstáculos o vehículos con anticipación.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 179,
+      "question": "En una calle de una pista por sentido de tránsito usted se encuentra con que su pista está obstruida. ¿Qué hace usted?",
+      "options": [
+        "Continúa, porque usted tiene el derecho a vía.",
+        "Hace señas con la mano a quienes vienen en contra para que le den la pasada.",
+        "Cede el paso al tránsito que viene en sentido contrario.",
+        "Acelera para poder pasar primero."
+      ],
+      "correct": 2,
+      "explanation": "Cuando su pista está obstruida en una calle de una pista por sentido, usted debe ceder el paso al tránsito que viene en sentido contrario, ya que ellos tienen la prioridad.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 180,
+      "question": "Combine los números de las señales con los textos que correspondan.",
+      "options": [
+        "Mantenga su derecha",
+        "Pavimento resbaladizo",
+        "Curva",
+        "No adelantar"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Las señales mostradas corresponden a: 1 y 6 (Curva), 2 y 5 (Pavimento resbaladizo), 3 (Mantenga su derecha), 4 (No adelantar). Todas las opciones de texto son descripciones correctas para al menos una de las señales.",
+      "category": "Señalización",
+      "difficulty": "intermedia",
+      "image": "img/img_q180.png"
+    },
+    {
+      "id": 181,
+      "question": "Usted va circulando por una carretera de doble calzada con tres pistas por sentido. Las demarcaciones de pistas y de eje central están reforzadas con tachas reflectantes. Si a su izquierda las tachas son rojas y a su derecha éstas son blancas, ¿por cuál pista va usted?",
+      "options": [
+        "Por la pista del medio.",
+        "Por la pista de la izquierda.",
+        "Por la pista de la derecha."
+      ],
+      "correct": 1,
+      "explanation": "En una carretera de doble calzada, las tachas rojas a la izquierda indican el borde izquierdo de la calzada o una separación de sentidos, mientras que las blancas a la derecha indican el borde derecho de su pista. Si tiene tachas rojas a su izquierda y blancas a su derecha, usted se encuentra en la pista de la izquierda.",
+      "category": "Seguridad",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 182,
+      "question": "Al ir circulando en su vehículo usted enfrenta esta señal. ¿Qué significa?",
+      "options": [
+        "Que usted puede conducir hasta un 10% más rápido, porque la señal es sólo una ecomendación.",
+        "Que en días no hábiles, cuando hay poco tránsito, no rige tal restricción.",
+        "Que usted no debe exceder esta velocidad.",
+        "Que usted debe mantener una velocidad inferior a la indicada en la señal."
+      ],
+      "correct": 2,
+      "explanation": "La señal de 'Velocidad Máxima' indica la velocidad máxima permitida en ese tramo de la vía, la cual no debe ser excedida bajo ninguna circunstancia. Es una restricción obligatoria, no una recomendación.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q182.png"
+    },
+    {
+      "id": 183,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "Usted no debe exceder la velocidad indicada.",
+        "Es más seguro conducir a la velocidad indicada.",
+        "La velocidad indicada es la máxima aconsejada.",
+        "Es una recomendación para cuando hay mucho tránsito."
+      ],
+      "correct": 0,
+      "explanation": "La señal de 'Velocidad Máxima' (60 Km/h) es una señal reglamentaria que indica la velocidad máxima permitida en ese tramo de la vía. Usted no debe exceder esta velocidad.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q183.png"
+    },
+    {
+      "id": 184,
+      "question": "¿Cuándo puede usted ingresar a un cruce en cuya calzada se han pintado franjas amarillas diagonales?",
+      "options": [
+        "Siempre que el semáforo esté en verde.",
+        "Cuando en la salida del cruce tenga espacio suficiente como para no quedar detenido en él.",
+        "Cada vez que va a virar hacia la derecha.",
+        "Sólo cuando haya menos de dos vehículos delante suyo."
+      ],
+      "correct": 1,
+      "explanation": "Las franjas amarillas diagonales en un cruce (caja amarilla) indican que no debe ingresar al cruce si no tiene espacio suficiente para salir de él, incluso si el semáforo está en verde, para evitar bloquear el tránsito.",
+      "category": "Señalización",
+      "difficulty": "intermedia",
+      "image": "img/img_q184.png"
+    },
+    {
+      "id": 185,
+      "question": "¿Qué significa esta señal de tránsito?",
+      "options": [
+        "Gravilla suelta.",
+        "Peligro de que se pinchen los neumáticos.",
+        "Pavimento resbaladizo.",
+        "Curvas en el camino."
+      ],
+      "correct": 2,
+      "explanation": "La señal de advertencia con el pictograma de un coche derrapando indica la proximidad de un tramo de vía donde el pavimento puede ser resbaladizo, especialmente en condiciones de lluvia o humedad, lo que requiere que los conductores extremen la precaución.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q185.png"
+    },
+    {
+      "id": 186,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "No adelantar.",
+        "Mantenga su derecha.",
+        "Preferencia al tránsito que viene en sentido contrario.",
+        "No cambiar de pista."
+      ],
+      "correct": 0,
+      "explanation": "La señal de 'No adelantar' prohíbe a los conductores adelantar a otros vehículos en ese tramo de la vía.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q186.png"
+    },
+    {
+      "id": 187,
+      "question": "¿Cuál de los siguientes tipos de señales le indica que no haga algo?",
+      "options": [
+        "a)",
+        "b)",
+        "c)",
+        "d)"
+      ],
+      "correct": 0,
+      "explanation": "Las señales de prohibición o restricción, como el círculo rojo con una línea diagonal (opción a), indican acciones que no se deben realizar.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q187.png"
+    },
+    {
+      "id": 188,
+      "question": "¿Qué debe hacer usted cuando enfrenta esta señal?",
+      "options": [
+        "Detenerse sólo si viene algún vehículo por la otra vía.",
+        "Detenerse sólo si hay peatones esperando para cruzar.",
+        "Detenerse sólo si en la calzada está pintada la leyenda PARE.",
+        "Detenerse siempre."
+      ],
+      "correct": 3,
+      "explanation": "La señal de 'PARE' (Stop) es una señal de alto obligatorio. Debe detenerse completamente siempre, sin excepción, independientemente de si hay otros vehículos o peatones presentes.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q188.png"
+    },
+    {
+      "id": 189,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "Semáforo fuera de servicio.",
+        "Proximidad de semáforo.",
+        "Semáforo activado por peatones.",
+        "Semáforos sincronizados."
+      ],
+      "correct": 1,
+      "explanation": "La señal que muestra un semáforo (generalmente en un rombo amarillo, aunque aquí se muestra solo el semáforo) es una señal de advertencia que indica la proximidad de un semáforo.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q189.png"
+    },
+    {
+      "id": 190,
+      "question": "¿Qué significa un semáforo en rojo?",
+      "options": [
+        "Que usted puede seguir su camino si no vienen vehículos por la otra vía.",
+        "Que usted debe disminuir su velocidad y estar preparado para detenerse.",
+        "Que usted debe detenerse antes de la línea de detención de vehículos.",
+        "Que usted debe detenerse sobre el paso de peatones."
+      ],
+      "correct": 2,
+      "explanation": "Un semáforo en rojo indica una detención obligatoria. Debe detenerse completamente antes de la línea de detención de vehículos o, si no hay línea, antes del paso de peatones, sin invadir la intersección.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 191,
+      "question": "¿Para qué sirven las señales amarillas con forma de rombo?",
+      "options": [
+        "Para entregar información.",
+        "Para dar órdenes.",
+        "Para indicar direcciones.",
+        "Para advertir acerca de peligros."
+      ],
+      "correct": 3,
+      "explanation": "Las señales de tránsito amarillas con forma de rombo son señales de advertencia de peligro. Su función es alertar a los conductores sobre condiciones peligrosas o cambios en la vía.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q191.png"
+    },
+    {
+      "id": 192,
+      "question": "¿Qué significa un semáforo en amarillo?",
+      "options": [
+        "Que usted debe prepararse para continuar.",
+        "Que usted debe detenerse antes de entrar al cruce, a menos que no alcance a hacerlo en forma segura.",
+        "Que usted debe continuar, siempre que vaya a virar.",
+        "Que usted debe continuar si no hay peatones cruzando."
+      ],
+      "correct": 1,
+      "explanation": "Un semáforo en amarillo indica que la luz cambiará a rojo. Usted debe detenerse antes de entrar al cruce si puede hacerlo de forma segura. Si ya está muy cerca del cruce y no puede detenerse de forma segura, debe continuar con precaución.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 193,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "Angostamiento de la vía.",
+        "Preferencia al tránsito que viene en sentido contrario.",
+        "Proximidad de doble calzada.",
+        "Dos sentidos de tránsito más adelante."
+      ],
+      "correct": 3,
+      "explanation": "La señal con dos flechas verticales (una hacia arriba y otra hacia abajo) indica que más adelante la vía tendrá dos sentidos de tránsito, es decir, vehículos circulando en ambas direcciones.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q193.png"
+    },
+    {
+      "id": 194,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "Zona de escuela.",
+        "Cruce de peatones.",
+        "Niños jugando.",
+        "Peatón debe transitar por su izquierda."
+      ],
+      "correct": 1,
+      "explanation": "La señal con el pictograma de un peatón indica la proximidad de un cruce de peatones, donde los conductores deben extremar la precaución y ceder el paso a los peatones.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q194.png"
+    },
+    {
+      "id": 195,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "Prohibido estacionar.",
+        "Estacionamiento permitido.",
+        "Zona de carga y descarga.",
+        "Estacionamiento exclusivo."
+      ],
+      "correct": 0,
+      "explanation": "La señal de 'Prohibido Estacionar' indica que no se permite estacionar vehículos en esa zona durante el horario señalado.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q195.png"
+    },
+    {
+      "id": 196,
+      "question": "¿Qué significa esta señal?",
+      "options": [
+        "Que se cerca a una zona en la que no se permiten bicicletas.",
+        "Que los ciclistas deben circular por la pista de la derecha.",
+        "Que los ciclistas deben circular en sentido contrario.",
+        "Que se acerca a una zona donde es muy probable la presencia de ciclistas en la vía."
+      ],
+      "correct": 3,
+      "explanation": "La señal de advertencia de forma romboidal amarilla con un símbolo de bicicleta indica la proximidad de una zona donde es probable encontrar ciclistas en la vía, alertando a los conductores para que extremen precauciones.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q196.png"
+    },
+    {
+      "id": 197,
+      "question": "¿Cuál de estas señales le advierte la proximidad de un cruce de peatones?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation": "La señal 'A', que muestra la silueta de una persona caminando, es la señal de advertencia de proximidad de un cruce de peatones.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q197.png"
+    },
+    {
+      "id": 198,
+      "question": "De las siguientes señales de tránsito, ¿cuál o cuáles corresponden a señales amarillas con forma de rombo?",
+      "options": [
+        "Puente angosto",
+        "Angostamiento de la vía",
+        "Dirección obligada",
+        "Mantenga su derecha",
+        "Bifurcación o cruce en T",
+        "Cruce ferroviario"
+      ],
+      "correct": [0, 1, 4, 5],
+      "explanation": "Las señales de advertencia de peligro son generalmente amarillas y con forma de rombo. 'Puente angosto', 'Angostamiento de la vía', 'Bifurcación o cruce en T' y 'Cruce ferroviario' son ejemplos de estas. 'Dirección obligada' y 'Mantenga su derecha' son señales reglamentarias o informativas, con otras formas y colores.",
+      "category": "Señalización",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 199,
+      "question": "Usted está enfrentando un semáforo en amarillo. ¿Qué luces se encenderán después?",
+      "options": [
+        "Primero la roja y luego la amarilla nuevamente.",
+        "Primero la roja y luego la verde.",
+        "Primero la verde y luego la roja.",
+        "Primero la verde y luego la amarilla nuevamente."
+      ],
+      "correct": 1,
+      "explanation": "La secuencia estándar de un semáforo es verde, amarillo, rojo, y luego de rojo, vuelve a verde.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 200,
+      "question": "¿Qué significa la demarcación de centro de calzada que muestra la figura?",
+      "options": [
+        "Que no puede ser traspasada por un conductor que viene por la pista A.",
+        "Que no puede ser traspasada por un conductor que va por la pista B.",
+        "Que en ningún caso pueden efectuarse adelantamientos.",
+        "Que sólo un conductor que va por la pista B podría efectuar un adelantamiento."
+      ],
+      "correct": 1,
+      "explanation": "La figura muestra una línea segmentada en el lado de la pista A, lo que permite adelantar, y una línea continua en el lado de la pista B, lo que prohíbe adelantar o traspasar la línea para los conductores que van por la pista B.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q200.png"
+    },
+    {
+      "id": 201,
+      "question": "El vehículo indicado con la flecha se encuentra detenido sobre una zona achurada esperando poder efectuar un viraje en U, ¿es esto correcto?",
+      "options": [
+        "Sí, la zona achurada sólo separa sentidos de circulación.",
+        "Sí, siempre que la zona achurada no esté reforzada con tachas o tachones reflectantes.",
+        "No, porque los vehículos no pueden detenerse ni circular por zonas achuradas.",
+        "No, porque se trata de una vía de mucho tránsito."
+      ],
+      "correct": 2,
+      "explanation": "Las zonas achuradas (marcadas con líneas diagonales) son áreas de la calzada donde está prohibido detenerse, estacionar o circular. El vehículo está infringiendo la normativa al detenerse sobre ella.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "básica",
+      "image": "img/img_q201.png"
+    },
+    {
+      "id": 202,
+      "question": "De acuerdo a las circunstancias que se aprecian en la fotografía, ¿sería correcto que el automóvil indicado con la flecha continuara derecho?",
+      "options": [
+        "Sí",
+        "No"
+      ],
+      "correct": 1,
+      "explanation": "No es correcto que el automóvil continúe derecho, ya que se encuentra en un carril marcado exclusivamente para viraje a la derecha, como lo indica la flecha blanca pintada en el pavimento.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "básica",
+      "image": "img/img_q202.png"
+    },
+    {
+      "id": 203,
+      "question": "¿Qué le indica la señal de tránsito que se observa en la fotografía?",
+      "options": [
+        "Que usted está obligado a detenerse a la altura de la señal.",
+        "Advierte que el cruce al que usted se aproxima es peligroso.",
+        "Que usted está obligado a ceder el paso a los vehículos que se aproximen por la otra vía.",
+        "Es sólo una recomendación para que usted ponga especial atención al pasar el cruce."
+      ],
+      "correct": 2,
+      "explanation": "La señal triangular roja con borde blanco es una señal de 'Ceda el Paso', que obliga al conductor a ceder el paso a los vehículos que se aproximen por la otra vía.",
+      "category": "Señalización",
+      "difficulty": "básica",
+      "image": "img/img_q203.png"
+    },
+    {
+      "id": 204,
+      "question": "¿Cuándo no debería usted detenerse al ponerse el semáforo en amarillo?",
+      "options": [
+        "Cuando la luz cambia sorpresivamente.",
+        "Cuando va demasiado rápido.",
+        "Cuando ya ha ingresado al cruce.",
+        "Cuando está tan cerca del cruce que su detención puede ocasionar un accidente."
+      ],
+      "correct": [2, 3],
+      "explanation": "No debe detenerse cuando ya ha ingresado al cruce o cuando está tan cerca que una detención brusca podría causar un accidente. En estos casos, debe continuar con precaución.",
+      "category": "Señalización",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 205,
+      "question": "¿Qué significa la luz verde del semáforo?",
+      "options": [
+        "Siga tan pronto aparezca la luz verde.",
+        "Siga, pero sólo si su pista está expedita justo después del cruce.",
+        "Siga después de mirar hacia ambos lados.",
+        "Siga."
+      ],
+      "correct": 1,
+      "explanation": "La luz verde del semáforo permite continuar, pero solo si la pista está despejada después del cruce para evitar quedar detenido en la intersección.",
+      "category": "Señalización",
+      "difficulty": "básica"
+    },
+    {
+      "id": 206,
+      "question": "Usted se encuentra en el lugar de un accidente. ¿Qué hace para ayudar de mejor forma a una persona herida que está con una fuerte hemorragia en la parte inferior de una pierna?",
+      "options": [
+        "La sienta y le da a beber algo caliente para tranquilizarla.",
+        "La mantiene tendida con la pierna herida en alto.",
+        "Aplica presión manual firme sobre la herida con un paño limpio y luego la venda.",
+        "La sienta y espera a que llegue una ambulancia.",
+        "Le conversa tranquilamente ayudándola a mantenerse de pie."
+      ],
+      "correct": [1, 2],
+      "explanation": "Para una hemorragia en la pierna, se debe mantener a la persona tendida con la pierna elevada y aplicar presión firme sobre la herida con un paño limpio para controlar el sangrado.",
+      "category": "Emergencias",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 207,
+      "question": "Usted se ve involucrado en un accidente. Un pasajero del otro vehículo ha resultado con lesiones leves. ¿Debe usted informar el hecho a la policía?",
+      "options": [
+        "Sí, debe dar cuenta del hecho a la policía dentro de los próximos 20 días.",
+        "No, el pasajero lesionado debe decidir si se informa a la policía o no.",
+        "No, los accidentes en que sólo resultan lesionados leves no se informan a la policía.",
+        "Sí, debe dar cuenta del hecho a la autoridad policial más inmediata a la brevedad."
+      ],
+      "correct": 3,
+      "explanation": "Siempre se debe informar a la policía sobre accidentes con lesiones, independientemente de la gravedad, y debe hacerse a la brevedad posible.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "básica"
+    },
+    {
+      "id": 208,
+      "question": "Usted se ha detenido en el lugar de un accidente para prestar ayuda. ¿Qué debería hacer usted?",
+      "options": [
+        "Mantener a las personas lesionadas en movimiento haciéndolas caminar.",
+        "Dar a las personas heridas algo caliente para beber.",
+        "Mantener abrigadas y cómodas a las personas heridas.",
+        "Mantener tranquilas a las personas heridas hablándoles alentadoramente.",
+        "Asegurarse de que no queden solos los heridos."
+      ],
+      "correct": [2, 3, 4],
+      "explanation": "Al prestar ayuda en un accidente, se debe mantener a los heridos abrigados, tranquilos y acompañados, evitando moverlos innecesariamente o darles líquidos.",
+      "category": "Emergencias",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 209,
+      "question": "Usted es el primero en llegar al lugar de un accidente en el que hay heridos graves. ¿Qué hace usted?",
+      "options": [
+        "Se asegura de que estén apagados los motores de los vehículos involucrados.",
+        "Se asegura de que alguien llame al 133 de Carabineros.",
+        "Intenta que los heridos beban algo.",
+        "Saca de los autos a los heridos."
+      ],
+      "correct": [0, 1],
+      "explanation": "Al llegar a un accidente con heridos graves, lo primero es apagar los motores para evitar incendios y llamar inmediatamente a Carabineros (133) para solicitar ayuda profesional.",
+      "category": "Emergencias",
+      "difficulty": "básica"
+    },
+    {
+      "id": 210,
+      "question": "Usted llega al lugar de un accidente en el que participó un camión cargado con productos químicos peligrosos. ¿Qué debería hacer usted antes de llamar al 133 de Carabineros?",
+      "options": [
+        "Tratar de mover el camión.",
+        "Tratar de diluir los productos químicos con agua.",
+        "Averiguar de qué clase de producto químico se trata mirando los rótulos y letreros que tiene el camión.",
+        "Tratar de evitar que los productos químicos se sigan derramando."
+      ],
+      "correct": 2,
+      "explanation": "Antes de llamar a emergencias, es crucial identificar el tipo de producto químico involucrado para que los servicios de emergencia puedan tomar las medidas de seguridad apropiadas.",
+      "category": "Emergencias",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 211,
+      "question": "Usted llega al lugar de un accidente en el que ha participado otro motociclista. Este yace consciente, pero en estado de shock. ¿De qué debería asegurarse usted?",
+      "options": [
+        "Que el motociclista se saque el casco.",
+        "Que el motociclista no se saque el casco.",
+        "Que al motociclista se le ayude a ponerse de pie.",
+        "Que al motociclista se le dé algo para beber."
+      ],
+      "correct": 1,
+      "explanation": "En caso de accidente de motocicleta, nunca se debe quitar el casco al motociclista lesionado, ya que podría tener lesiones cervicales y el casco proporciona estabilidad.",
+      "category": "Emergencias",
+      "difficulty": "básica"
+    },
+    {
+      "id": 212,
+      "question": "Usted va por una autopista. De un camión cargado que va delante suyo cae una caja sin que su conductor se dé cuenta. ¿Qué hace usted?",
+      "options": [
+        "Trata de alcanzar al camión y de llamar la atención de su conductor.",
+        "Se detiene junto a la caja y hace señales de luces hasta que llegue la policía.",
+        "Se desplaza hacia la berma y luego intenta recoger la caja.",
+        "Continúa hasta donde haya un teléfono para avisar a la policía o a los servicios de emergencia."
+      ],
+      "correct": 3,
+      "explanation": "Lo más seguro es continuar hasta encontrar un teléfono para reportar el objeto en la vía a las autoridades, evitando maniobras peligrosas en la autopista.",
+      "category": "Seguridad",
+      "difficulty": "básica"
+    },
+    {
+      "id": 213,
+      "question": "¿Quién o quiénes están cubiertos por el Seguro Obligatorio de Accidentes Personales?",
+      "options": [
+        "Sólo el conductor de la motocicleta asegurada.",
+        "Sólo el que viaja como acompañante en la motocicleta asegurada.",
+        "Sólo el acompañante y conductor de la motocicleta asegurada.",
+        "El conductor, su acompañante y cualquier tercero afectado en un accidente de tránsito en que participe la motocicleta asegurada."
+      ],
+      "correct": 3,
+      "explanation": "El Seguro Obligatorio de Accidentes Personales cubre al conductor, acompañante y cualquier tercero que resulte afectado en un accidente donde participe el vehículo asegurado.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "básica"
+    },
+    {
+      "id": 214,
+      "question": "¿Qué documento no está obligado a portar usted siempre en su vehículo?",
+      "options": [
+        "El Permiso de Circulación.",
+        "El certificado de un Seguro Obligatorio de Accidentes Personales.",
+        "Su licencia de conductor.",
+        "El certificado de revisión técnica o de homologación.",
+        "El certificado de inscripción en el Registro Nacional de Vehículos Motorizados."
+      ],
+      "correct": 4,
+      "explanation": "El certificado de inscripción en el Registro Nacional de Vehículos Motorizados no es un documento que se deba portar siempre en el vehículo, a diferencia de los otros documentos mencionados.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "básica"
+    },
+    {
+      "id": 215,
+      "question": "En relación con las infracciones a las normas del tránsito, ¿cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "Conducir un vehículo bajo los efectos del alcohol es una infracción gravísima.",
+        "No respetar una señal PARE es una infracción gravísima.",
+        "La comisión de una infracción gravísima es sancionada no sólo con una multa, sino que también con la suspensión de la licencia de conducir del infractor.",
+        "Solamente son infracciones gravísimas el no respetar la luz roja de un semáforo y el exceso de velocidad.",
+        "En ningún caso una licencia de conducir puede ser cancelada por el Juez."
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Conducir bajo efectos del alcohol, no respetar señal PARE y cometer infracciones gravísimas son sancionadas con multas y suspensión de licencia. Las infracciones gravísimas incluyen más casos que solo semáforos y exceso de velocidad.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "intermedia"
+    },
+    {
+      "id": 216,
+      "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+      "options": [
+        "Las únicas infracciones gravísimas son el conducir bajo los efectos del alcohol y el exceso de velocidad.",
+        "Las infracciones gravísimas son sancionadas con multas y, además, con la suspensión de la licencia de conducir del infractor.",
+        "Dos infracciones graves cometidas en un período de 12 meses dan origen a una suspensión de la licencia de conducir del infractor.",
+        "No respetar el derecho preferente de paso de un peatón es una infracción leve.",
+        "No respetar una señal Ceda el Paso es una infracción gravísima si a consecuencia de la infracción se produce un accidente."
+      ],
+      "correct": [1, 2, 4],
+      "explanation": "Las infracciones gravísimas conllevan multas y suspensión de licencia. Dos infracciones graves en 12 meses también pueden suspender la licencia. No respetar un Ceda el Paso y causar un accidente es una infracción gravísima.",
+      "category": "Normativa de Tránsito",
+      "difficulty": "intermedia"
+    }
+  ],
+  "metadata": {
+    "totalQuestions": 216,
+    "categories": [
+      "Emergencias",
+      "Seguridad", 
+      "Mantenimiento",
+      "Manejo del vehículo",
+      "Velocidad",
+      "Señalización",
+      "Estacionamiento"
+    ],
+    "difficultyLevels": ["básica", "intermedia", "avanzada"],
+    "version": "2.0.0",
+    "lastUpdated": "2024-01-15",
+    "source": "Cuestionario oficial PDF"
+  }
+}

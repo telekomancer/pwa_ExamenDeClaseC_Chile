@@ -1,0 +1,27 @@
+{
+  "name": "pwa-clase-c-chile",
+  "version": "1.0.0",
+  "description": "PWA para estudio diario de licencia Clase C en Chile",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "start-node": "npx serve . -p 8000",
+    "start-php": "php -S localhost:8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build step needed for static PWA'",
+    "test": "echo 'Open http://localhost:8000 in your browser'"
+  },
+  "keywords": [
+    "pwa",
+    "chile",
+    "licencia",
+    "clase-c",
+    "estudio",
+    "offline"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
