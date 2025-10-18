@@ -1,0 +1,37 @@
+name: Deploy PWA to GitHub Pages (with Personal Token)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Verify JSON
+      run: |
+        python3 -c "
+        import json
+        with open('questions.json', 'r') as f:
+            data = json.load(f)
+        print(f'✅ JSON válido: {len(data[\"questions\"])} preguntas')
+        "
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        publish_dir: ./
+        cname: # Opcional: tu dominio personalizado
