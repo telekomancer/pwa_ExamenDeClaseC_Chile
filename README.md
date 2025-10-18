@@ -1,6 +1,13 @@
 # 🚗 PWA Clase C Chile - Estudio Diario
 
+[![Deploy Status](https://img.shields.io/badge/Status-Deployed%20Successfully-brightgreen)](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)
+[![PWA Ready](https://img.shields.io/badge/PWA-Ready-blue)](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)
+[![Questions](https://img.shields.io/badge/Questions-216-orange)](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)
+
 Una aplicación web progresiva (PWA) para estudiar y prepararse para el examen de licencia Clase C en Chile.
+
+## 🌐 **Acceso Directo**
+**[📱 Abrir PWA en tu navegador](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)**
 
 ## 📱 Características
 
@@ -12,6 +19,7 @@ Una aplicación web progresiva (PWA) para estudiar y prepararse para el examen d
 - **Manual del motociclista** disponible para descarga
 - **Imágenes** para preguntas que las requieren
 - **Preguntas de selección múltiple** y de respuesta única
+- **Instalable** como aplicación nativa en móviles
 
 ## 🎯 Categorías de Preguntas
 
@@ -38,10 +46,16 @@ Una aplicación web progresiva (PWA) para estudiar y prepararse para el examen d
 
 2. **Habilitar GitHub Pages:**
    - Ve a Settings → Pages
-   - Source: "GitHub Actions"
-   - El workflow se ejecutará automáticamente
+   - Source: "Deploy from a branch"
+   - Branch: "gh-pages"
+   - Folder: "/ (root)"
 
-3. **Acceder a la aplicación:**
+3. **Desplegar manualmente:**
+   ```bash
+   ./deploy-manual.sh
+   ```
+
+4. **Acceder a la aplicación:**
    - URL: `https://TU_USUARIO.github.io/pwa-clase-c-chile/`
 
 ### Netlify (Alternativa)
@@ -59,14 +73,21 @@ Una aplicación web progresiva (PWA) para estudiar y prepararse para el examen d
 ## 📱 Instalación en Dispositivo
 
 ### Android
-1. Abre la aplicación en Chrome
+1. Abre [la aplicación](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/) en Chrome
 2. Menú → "Agregar a pantalla de inicio"
 3. La app se instalará como una aplicación nativa
 
 ### iOS
-1. Abre la aplicación en Safari
+1. Abre [la aplicación](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/) en Safari
 2. Compartir → "Agregar a pantalla de inicio"
 3. La app se instalará como una aplicación nativa
+
+### 🎯 **Ventajas de la PWA:**
+- ✅ **Instalación rápida** sin tiendas de aplicaciones
+- ✅ **Actualizaciones automáticas** al abrir la app
+- ✅ **Funciona offline** después de la primera carga
+- ✅ **Notificaciones** para recordatorios de estudio
+- ✅ **Icono personalizado** en la pantalla de inicio
 
 ## 🛠️ Desarrollo Local
 
@@ -114,6 +135,43 @@ Las contribuciones son bienvenidas. Por favor:
 3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
+
+## 🔧 Troubleshooting
+
+### Problemas Comunes
+
+#### **La PWA no se instala**
+- ✅ Asegúrate de usar **HTTPS** (GitHub Pages lo proporciona automáticamente)
+- ✅ Usa **Chrome** en Android o **Safari** en iOS
+- ✅ Verifica que el Service Worker esté registrado (DevTools → Application → Service Workers)
+
+#### **Las imágenes no cargan**
+- ✅ Verifica que las imágenes estén en la carpeta `img/`
+- ✅ Limpia la caché del navegador (Ctrl+Shift+R)
+- ✅ Verifica la consola del navegador para errores
+
+#### **El progreso no se guarda**
+- ✅ Verifica que el navegador permita Local Storage
+- ✅ No uses modo incógnito
+- ✅ Verifica que JavaScript esté habilitado
+
+#### **La PWA no funciona offline**
+- ✅ Espera a que se complete la primera carga
+- ✅ Verifica que el Service Worker esté activo
+- ✅ Revisa la pestaña Network en DevTools
+
+### 🛠️ **Comandos Útiles**
+
+```bash
+# Verificar que todo esté listo
+./check-deployment.sh
+
+# Desplegar actualizaciones
+./deploy-manual.sh
+
+# Servidor local para desarrollo
+python3 -m http.server 8000
+```
 
 ## 📞 Soporte
 
