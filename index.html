@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Clase C Chile - Estudio Diario</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="description" content="Aplicación de estudio diario para obtener la licencia Clase C en Chile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Clase C Chile">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">🚗 Clase C Chile</h1>
+                <div class="progress-info">
+                    <span id="progress-text">Cargando...</span>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <!-- Welcome Screen -->
+                <div id="welcome-screen" class="screen active">
+                    <div class="welcome-card">
+                        <h2>¡Bienvenido al Estudio Diario!</h2>
+                        <p>Practica con preguntas diarias para prepararte para tu examen de Clase C</p>
+                        <div class="total-questions-info">
+                            <span class="total-questions-badge">📚 <span id="total-available-questions">216</span> preguntas disponibles</span>
+                        </div>
+                        
+                        <!-- Manual de descarga -->
+                        <div class="manual-download">
+                            <h4>📖 Material de Estudio</h4>
+                            <p>Descarga el manual oficial para consulta adicional:</p>
+                            <a href="pdfs/LNC-MOTOCICLISTAS.pdf" download="Manual-Motociclistas-Clase-C.pdf" class="download-button">
+                                📄 Descargar Manual del Motociclista
+                            </a>
+                        </div>
+                        
+                        <!-- Selector de cantidad de preguntas -->
+                        <div class="question-selector">
+                            <h3>¿Cuántas preguntas quieres estudiar hoy?</h3>
+                            <div class="question-options">
+                                <button class="question-option" data-questions="5">5 preguntas</button>
+                                <button class="question-option" data-questions="10">10 preguntas</button>
+                                <button class="question-option active" data-questions="20">20 preguntas</button>
+                                <button class="question-option" data-questions="30">30 preguntas</button>
+                                <button class="question-option" data-questions="50">50 preguntas</button>
+                            </div>
+                            <div class="custom-questions">
+                                <label for="custom-questions">O elige una cantidad personalizada:</label>
+                                <input type="number" id="custom-questions" min="1" max="100" placeholder="Ej: 15">
+                            </div>
+                        </div>
+                        
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number" id="days-studied">0</span>
+                                <span class="stat-label">Días estudiados</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="total-questions">0</span>
+                                <span class="stat-label">Preguntas respondidas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="current-streak">0</span>
+                                <span class="stat-label">Racha actual</span>
+                            </div>
+                        </div>
+                        
+                        <button id="start-study" class="btn btn-primary">Comenzar Estudio de Hoy</button>
+                        <div class="study-info">
+                            <p id="selected-questions-info">Estudiarás <span id="selected-count">20</span> preguntas hoy</p>
+                        </div>
+                        <div id="today-sessions" class="today-sessions" style="display: none;">
+                            <h4>Sesiones de Hoy</h4>
+                            <div id="sessions-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Screen -->
+                <div id="question-screen" class="screen">
+                    <div class="question-card">
+                        <div class="question-header">
+                            <span id="question-number">1 / 20</span>
+                            <span id="question-timer">⏱️ 0:00</span>
+                        </div>
+                        <h3 id="question-text">Cargando pregunta...</h3>
+                        <div id="question-image" class="question-image" style="display: none;">
+                            <img id="question-img" src="" alt="Imagen de la pregunta">
+                        </div>
+                        <div id="options" class="options">
+                            <!-- Options will be populated by JavaScript -->
+                        </div>
+                        <div class="question-actions">
+                            <button id="next-question" class="btn btn-secondary" disabled>Siguiente</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Screen -->
+                <div id="results-screen" class="screen">
+                    <div class="results-card">
+                        <h2>¡Excelente trabajo!</h2>
+                        <div class="results-stats">
+                            <div class="result-stat">
+                                <span class="result-number" id="correct-answers">0</span>
+                                <span class="result-label">Correctas</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number" id="incorrect-answers">0</span>
+                                <span class="result-label">Incorrectas</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number" id="accuracy">0%</span>
+                                <span class="result-label">Precisión</span>
+                            </div>
+                        </div>
+                        <div class="results-actions">
+                            <button id="review-answers" class="btn btn-secondary">Revisar Respuestas</button>
+                            <button id="start-new-session" class="btn btn-primary">Nueva Sesión</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Screen -->
+                <div id="review-screen" class="screen">
+                    <div class="review-card">
+                        <h2>Revisión de Respuestas</h2>
+                        <div id="review-list" class="review-list">
+                            <!-- Review items will be populated by JavaScript -->
+                        </div>
+                        <div class="review-actions">
+                            <button id="back-to-results" class="btn btn-secondary">Volver a Resultados</button>
+                            <button id="new-session-from-review" class="btn btn-primary">Nueva Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 PWA Clase C Chile - Estudio Self-Paced</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
