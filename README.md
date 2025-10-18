@@ -1,13 +1,13 @@
 # 🚗 PWA Clase C Chile - Estudio Diario
 
-[![Deploy Status](https://img.shields.io/badge/Status-Deployed%20Successfully-brightgreen)](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)
-[![PWA Ready](https://img.shields.io/badge/PWA-Ready-blue)](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)
-[![Questions](https://img.shields.io/badge/Questions-216-orange)](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)
+[![Deploy Status](https://img.shields.io/badge/Status-Deployed%20Successfully-brightgreen)](https://pwa-clase-c-chile.netlify.app/)
+[![PWA Ready](https://img.shields.io/badge/PWA-Ready-blue)](https://pwa-clase-c-chile.netlify.app/)
+[![Questions](https://img.shields.io/badge/Questions-216-orange)](https://pwa-clase-c-chile.netlify.app/)
 
 Una aplicación web progresiva (PWA) para estudiar y prepararse para el examen de licencia Clase C en Chile.
 
 ## 🌐 **Acceso Directo**
-**[📱 Abrir PWA en tu navegador](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/)**
+**[📱 Abrir PWA en tu navegador](https://pwa-clase-c-chile.netlify.app/)**
 
 ## 📱 Características
 
@@ -73,12 +73,12 @@ Una aplicación web progresiva (PWA) para estudiar y prepararse para el examen d
 ## 📱 Instalación en Dispositivo
 
 ### Android
-1. Abre [la aplicación](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/) en Chrome
+1. Abre [la aplicación](https://pwa-clase-c-chile.netlify.app/) en Chrome
 2. Menú → "Agregar a pantalla de inicio"
 3. La app se instalará como una aplicación nativa
 
 ### iOS
-1. Abre [la aplicación](https://telekomancer.github.io/pwa_ExamenDeClaseC_Chile/) en Safari
+1. Abre [la aplicación](https://pwa-clase-c-chile.netlify.app/) en Safari
 2. Compartir → "Agregar a pantalla de inicio"
 3. La app se instalará como una aplicación nativa
 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Manifest PWA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .debug-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { color: #059669; font-weight: bold; }
+        .error { color: #dc2626; font-weight: bold; }
+        .warning { color: #d97706; font-weight: bold; }
+        .info { color: #2563eb; font-weight: bold; }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #1d4ed8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Debug Manifest PWA</h1>
+        <p>Esta página te ayuda a depurar el manifest.json y verificar por qué se agrega el subdirectorio.</p>
+        
+        <button onclick="debugManifest()">🔍 Verificar Manifest</button>
+        <button onclick="debugServiceWorker()">⚙️ Verificar Service Worker</button>
+        <button onclick="debugCache()">💾 Verificar Caché</button>
+        <button onclick="clearAll()">🧹 Limpiar Todo</button>
+        
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function showResult(message, type = 'info') {
+            const results = document.getElementById('results');
+            results.innerHTML += `<div class="debug-section ${type}">${message}</div>`;
+        }
+
+        async function debugManifest() {
+            showResult('<h3>📱 Verificando Manifest.json</h3>', 'info');
+            
+            try {
+                // Verificar manifest desde diferentes rutas
+                const manifestPaths = [
+                    '/manifest.json',
+                    './manifest.json',
+                    'manifest.json'
+                ];
+                
+                for (const path of manifestPaths) {
+                    try {
+                        const response = await fetch(path);
+                        if (response.ok) {
+                            const manifest = await response.json();
+                            showResult(`✅ Manifest cargado desde: ${path}`, 'success');
+                            showResult(`<pre>${JSON.stringify(manifest, null, 2)}</pre>`, 'info');
+                            
+                            // Verificar start_url
+                            if (manifest.start_url === '/') {
+                                showResult('✅ start_url correcto: /', 'success');
+                            } else {
+                                showResult(`❌ start_url incorrecto: ${manifest.start_url}`, 'error');
+                            }
+                            
+                            // Verificar scope
+                            if (manifest.scope === '/') {
+                                showResult('✅ scope correcto: /', 'success');
+                            } else {
+                                showResult(`❌ scope incorrecto: ${manifest.scope}`, 'error');
+                            }
+                            
+                            break;
+                        }
+                    } catch (error) {
+                        showResult(`❌ Error cargando manifest desde ${path}: ${error.message}`, 'error');
+                    }
+                }
+            } catch (error) {
+                showResult(`❌ Error general: ${error.message}`, 'error');
+            }
+        }
+
+        async function debugServiceWorker() {
+            showResult('<h3>⚙️ Verificando Service Worker</h3>', 'info');
+            
+            if ('serviceWorker' in navigator) {
+                try {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    showResult(`📊 Service Workers registrados: ${registrations.length}`, 'info');
+                    
+                    for (let i = 0; i < registrations.length; i++) {
+                        const registration = registrations[i];
+                        showResult(`SW ${i + 1}: ${registration.scope}`, 'info');
+                        
+                        if (registration.scope.includes('pwa_ExamenDeClaseC')) {
+                            showResult(`❌ Service Worker con subdirectorio: ${registration.scope}`, 'error');
+                        } else {
+                            showResult(`✅ Service Worker limpio: ${registration.scope}`, 'success');
+                        }
+                    }
+                } catch (error) {
+                    showResult(`❌ Error verificando Service Worker: ${error.message}`, 'error');
+                }
+            } else {
+                showResult('⚠️ Service Worker no soportado', 'warning');
+            }
+        }
+
+        async function debugCache() {
+            showResult('<h3>💾 Verificando Caché</h3>', 'info');
+            
+            if ('caches' in window) {
+                try {
+                    const cacheNames = await caches.keys();
+                    showResult(`📊 Cachés encontrados: ${cacheNames.length}`, 'info');
+                    
+                    for (const cacheName of cacheNames) {
+                        showResult(`Caché: ${cacheName}`, 'info');
+                        
+                        if (cacheName.includes('pwa_ExamenDeClaseC')) {
+                            showResult(`❌ Caché con subdirectorio: ${cacheName}`, 'error');
+                        } else {
+                            showResult(`✅ Caché limpio: ${cacheName}`, 'success');
+                        }
+                    }
+                } catch (error) {
+                    showResult(`❌ Error verificando caché: ${error.message}`, 'error');
+                }
+            } else {
+                showResult('⚠️ Cache API no soportada', 'warning');
+            }
+        }
+
+        async function clearAll() {
+            showResult('<h3>🧹 Limpiando Todo</h3>', 'info');
+            
+            try {
+                // Limpiar Service Workers
+                if ('serviceWorker' in navigator) {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    for (let registration of registrations) {
+                        await registration.unregister();
+                        showResult('✅ Service Worker eliminado', 'success');
+                    }
+                }
+                
+                // Limpiar cachés
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    for (let cacheName of cacheNames) {
+                        await caches.delete(cacheName);
+                        showResult(`✅ Caché eliminado: ${cacheName}`, 'success');
+                    }
+                }
+                
+                showResult('🔄 Recargando página en 3 segundos...', 'info');
+                setTimeout(() => {
+                    window.location.reload();
+                }, 3000);
+                
+            } catch (error) {
+                showResult(`❌ Error limpiando: ${error.message}`, 'error');
+            }
+        }
+
+        // Verificar estado al cargar
+        window.onload = function() {
+            showResult('<h3>🌐 Información del Navegador</h3>', 'info');
+            showResult(`URL actual: ${window.location.href}`, 'info');
+            showResult(`User Agent: ${navigator.userAgent}`, 'info');
+            showResult(`Service Worker soportado: ${'serviceWorker' in navigator}`, 'info');
+            showResult(`Cache API soportada: ${'caches' in window}`, 'info');
+        };
+    </script>
+</body>
+</html>
