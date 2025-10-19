@@ -334,6 +334,9 @@ class ClaseCApp {
     const questionNumber = this.currentQuestionIndex + 1;
     const totalQuestions = this.currentSession.questions.length;
     
+    // Detectar si la pregunta tiene múltiples respuestas correctas
+    const hasMultipleCorrect = Array.isArray(question.correct);
+    
     // Actualizar información de la pregunta
     document.getElementById('question-number').textContent = `${questionNumber} / ${totalQuestions}`;
     document.getElementById('question-text').textContent = question.question;
@@ -357,38 +360,82 @@ class ClaseCApp {
       const optionElement = document.createElement('button');
       optionElement.className = 'option';
       optionElement.textContent = option;
-      optionElement.addEventListener('click', () => this.selectAnswer(index));
+      optionElement.dataset.index = index;
+      
+      if (hasMultipleCorrect) {
+        // Para preguntas de múltiples respuestas, usar checkboxes
+        optionElement.classList.add('option-multiple');
+        optionElement.addEventListener('click', () => this.toggleMultipleAnswer(index));
+      } else {
+        // Para preguntas de respuesta única, comportamiento normal
+        optionElement.addEventListener('click', () => this.selectAnswer(index));
+      }
+      
       optionsContainer.appendChild(optionElement);
     });
+    
+    // Mostrar instrucciones para preguntas de múltiples respuestas
+    if (hasMultipleCorrect) {
+      const instructionElement = document.createElement('div');
+      instructionElement.className = 'multiple-instruction';
+      instructionElement.innerHTML = '<p>💡 <strong>Pregunta de múltiples respuestas:</strong> Selecciona todas las opciones correctas</p>';
+      optionsContainer.appendChild(instructionElement);
+    }
     
     // Resetear botón siguiente
     const nextButton = document.getElementById('next-question');
     nextButton.disabled = true;
-    nextButton.textContent = 'Siguiente';
+    nextButton.textContent = hasMultipleCorrect ? 'Confirmar Respuestas' : 'Siguiente';
+    
+    // Resetear selecciones múltiples
+    this.currentMultipleSelections = [];
+  }
+
+  toggleMultipleAnswer(selectedIndex) {
+    const optionElement = document.querySelector(`[data-index="${selectedIndex}"]`);
+    
+    if (optionElement.classList.contains('selected')) {
+      // Deseleccionar
+      optionElement.classList.remove('selected');
+      this.currentMultipleSelections = this.currentMultipleSelections.filter(index => index !== selectedIndex);
+    } else {
+      // Seleccionar
+      optionElement.classList.add('selected');
+      this.currentMultipleSelections.push(selectedIndex);
+    }
+    
+    // Habilitar botón siguiente si hay al menos una selección
+    const nextButton = document.getElementById('next-question');
+    nextButton.disabled = this.currentMultipleSelections.length === 0;
   }
 
   selectAnswer(selectedIndex) {
     const question = this.currentSession.questions[this.currentQuestionIndex];
     
+    // Determinar si es correcto
+    let isCorrect;
+    if (Array.isArray(question.correct)) {
+      // Para preguntas de múltiples respuestas, verificar si todas las respuestas correctas están seleccionadas
+      const correctAnswers = question.correct.sort();
+      const selectedAnswers = this.currentMultipleSelections.sort();
+      isCorrect = correctAnswers.length === selectedAnswers.length && 
+                  correctAnswers.every((answer, index) => answer === selectedAnswers[index]);
+    } else {
+      // Para preguntas de respuesta única
+      isCorrect = selectedIndex === question.correct;
+    }
+    
     // Guardar respuesta
     this.sessionAnswers.push({
       questionId: question.id,
-      selectedAnswer: selectedIndex,
+      selectedAnswer: Array.isArray(question.correct) ? this.currentMultipleSelections : selectedIndex,
       correctAnswer: question.correct,
-      isCorrect: selectedIndex === question.correct,
+      isCorrect: isCorrect,
       timeSpent: this.getTimeSpent()
     });
     
     // Mostrar retroalimentación visual
-    const options = document.querySelectorAll('.option');
-    options.forEach((option, index) => {
-      option.disabled = true;
-      if (index === question.correct) {
-        option.classList.add('correct');
-      } else if (index === selectedIndex && selectedIndex !== question.correct) {
-        option.classList.add('incorrect');
-      }
-    });
+    this.showAnswerFeedback(question, selectedIndex);
     
     // Habilitar botón siguiente
     const nextButton = document.getElementById('next-question');
@@ -398,6 +445,32 @@ class ClaseCApp {
     if (question.explanation) {
       this.showExplanation(question.explanation);
     }
+  }
+
+  showAnswerFeedback(question, selectedIndex) {
+    const options = document.querySelectorAll('.option');
+    const isMultiple = Array.isArray(question.correct);
+    
+    options.forEach((option, index) => {
+      option.disabled = true;
+      
+      if (isMultiple) {
+        // Para preguntas de múltiples respuestas
+        if (question.correct.includes(index)) {
+          option.classList.add('correct');
+        }
+        if (this.currentMultipleSelections.includes(index) && !question.correct.includes(index)) {
+          option.classList.add('incorrect');
+        }
+      } else {
+        // Para preguntas de respuesta única
+        if (index === question.correct) {
+          option.classList.add('correct');
+        } else if (index === selectedIndex && selectedIndex !== question.correct) {
+          option.classList.add('incorrect');
+        }
+      }
+    });
   }
 
   showExplanation(explanation) {
@@ -484,18 +557,43 @@ class ClaseCApp {
       const reviewItem = document.createElement('div');
       reviewItem.className = `review-item ${answer.isCorrect ? 'correct' : 'incorrect'}`;
       
+      // Determinar si es pregunta de múltiples respuestas
+      const isMultiple = Array.isArray(question.correct);
+      
+      // Generar texto de respuestas del usuario
+      let userAnswerText;
+      if (isMultiple) {
+        if (Array.isArray(answer.selectedAnswer) && answer.selectedAnswer.length > 0) {
+          const selectedOptions = answer.selectedAnswer.map(index => question.options[index]).join(', ');
+          userAnswerText = selectedOptions;
+        } else {
+          userAnswerText = 'Ninguna seleccionada';
+        }
+      } else {
+        userAnswerText = question.options[answer.selectedAnswer];
+      }
+      
+      // Generar texto de respuestas correctas
+      let correctAnswerText;
+      if (isMultiple) {
+        const correctOptions = question.correct.map(index => question.options[index]).join(', ');
+        correctAnswerText = correctOptions;
+      } else {
+        correctAnswerText = question.options[question.correct];
+      }
+      
       reviewItem.innerHTML = `
         <div class="review-question">
-          <h4>Pregunta ${index + 1}</h4>
+          <h4>Pregunta ${index + 1} ${isMultiple ? '(Múltiples respuestas)' : ''}</h4>
           <p>${question.question}</p>
         </div>
         <div class="review-answers">
           <div class="user-answer ${answer.isCorrect ? 'correct' : 'incorrect'}">
-            <strong>Tu respuesta:</strong> ${question.options[answer.selectedAnswer]}
+            <strong>Tu respuesta:</strong> ${userAnswerText}
           </div>
           ${!answer.isCorrect ? `
             <div class="correct-answer">
-              <strong>Respuesta correcta:</strong> ${question.options[question.correct]}
+              <strong>Respuesta${isMultiple ? 's' : ''} correcta${isMultiple ? 's' : ''}:</strong> ${correctAnswerText}
             </div>
           ` : ''}
           ${question.explanation ? `
