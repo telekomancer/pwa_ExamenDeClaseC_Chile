@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Debug - PWA Clase C v2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .debug-controls {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .input-group input {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 120px;
+        }
+        .input-group button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .input-group button:hover {
+            background: #218838;
+        }
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .quick-actions button {
+            padding: 8px 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .quick-actions button:hover {
+            background: #0056b3;
+        }
+        .instructions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .question-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .question-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .question-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .options {
+            margin: 15px 0;
+        }
+        .option {
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .option:hover {
+            border-color: #007bff;
+            background: #f8f9fa;
+        }
+        .option.selected {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+        .option.correct {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+        .option.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+        }
+        .option input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .multiple-instruction {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .explanation {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #007bff;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .quiz-actions {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            padding: 12px 24px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        .result {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .result.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .result.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Quiz Debug - PWA Clase C v2</h1>
+        
+        <div class="debug-controls">
+            <h3>🔍 Probar Pregunta Específica</h3>
+            <p>Ingresa el número de la pregunta para verla en modo quiz:</p>
+            <div class="input-group">
+                <input type="number" id="question-input" placeholder="Ej: 180" min="1" max="199">
+                <button onclick="loadQuestion()">🎯 Cargar Pregunta</button>
+            </div>
+            
+            <div class="quick-actions">
+                <button onclick="loadQuestionById(1)">Pregunta 1</button>
+                <button onclick="loadQuestionById(21)">Pregunta 21</button>
+                <button onclick="loadQuestionById(50)">Pregunta 50</button>
+                <button onclick="loadQuestionById(180)">Pregunta 180</button>
+                <button onclick="loadRandomQuestion()">🎲 Pregunta Aleatoria</button>
+            </div>
+        </div>
+        
+        <div id="question-container" style="display: none;">
+            <div class="question-card">
+                <div class="question-text" id="question-text">Cargando pregunta...</div>
+                <div id="question-image-container" style="display: none;">
+                    <img id="question-image" src="" alt="Imagen de la pregunta" class="question-image">
+                </div>
+                <div id="options-container" class="options">
+                    <!-- Las opciones se cargarán aquí -->
+                </div>
+                <div id="multiple-instruction" class="multiple-instruction" style="display: none;">
+                    <p>💡 <strong>Pregunta de múltiples respuestas:</strong> Selecciona todas las opciones correctas</p>
+                </div>
+                <div id="explanation" class="explanation" style="display: none;">
+                    <h4>💡 Explicación:</h4>
+                    <p id="explanation-text"></p>
+                </div>
+                <div id="result" class="result" style="display: none;"></div>
+                <div class="quiz-actions">
+                    <button id="check-answer" class="btn btn-primary" onclick="checkAnswer()" disabled>Verificar Respuesta</button>
+                    <button id="next-question" class="btn btn-secondary" onclick="loadRandomQuestion()" style="display: none;">Siguiente Pregunta</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>💡 Instrucciones</h3>
+            <p>Esta herramienta te permite probar preguntas específicas en modo quiz real.</p>
+            <ul>
+                <li><strong>Preguntas simples:</strong> Selecciona una opción y haz clic en "Verificar Respuesta"</li>
+                <li><strong>Preguntas múltiples:</strong> Selecciona todas las opciones correctas y haz clic en "Verificar Respuesta"</li>
+                <li><strong>Feedback:</strong> Después de verificar, verás si tu respuesta es correcta y la explicación</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentQuestion = null;
+        let selectedAnswers = [];
+        
+        async function loadQuestions() {
+            try {
+                // Agregar timestamp para evitar caché
+                const response = await fetch(`questions.json?v=${Date.now()}`);
+                const data = await response.json();
+                questions = data.questions;
+                console.log(`Cargadas ${questions.length} preguntas`);
+                
+                // Verificar que tenemos las preguntas correctas
+                if (questions.length !== 216) {
+                    console.warn(`⚠️ Se esperaban 216 preguntas, pero se cargaron ${questions.length}`);
+                }
+            } catch (error) {
+                console.error('Error cargando preguntas:', error);
+                alert('Error cargando las preguntas');
+            }
+        }
+        
+        function loadQuestion() {
+            const input = document.getElementById('question-input');
+            const questionId = parseInt(input.value);
+            
+            if (!questionId || questionId < 1 || questionId > 199) {
+                alert('Por favor, ingresa un número de pregunta válido (1-199)');
+                return;
+            }
+            
+            loadQuestionById(questionId);
+        }
+        
+        function loadQuestionById(questionId) {
+            if (questions.length === 0) {
+                alert('Las preguntas no han sido cargadas');
+                return;
+            }
+            
+            console.log(`Buscando pregunta ${questionId} entre ${questions.length} preguntas disponibles`);
+            console.log('IDs disponibles:', questions.slice(0, 10).map(q => q.id));
+            
+            const question = questions.find(q => q.id === questionId);
+            if (!question) {
+                alert(`Pregunta ${questionId} no encontrada. Total de preguntas cargadas: ${questions.length}`);
+                return;
+            }
+            
+            displayQuestion(question);
+        }
+        
+        function loadRandomQuestion() {
+            if (questions.length === 0) {
+                alert('Las preguntas no han sido cargadas');
+                return;
+            }
+            
+            const randomId = questions[Math.floor(Math.random() * questions.length)].id;
+            loadQuestionById(randomId);
+        }
+        
+        function displayQuestion(question) {
+            currentQuestion = question;
+            selectedAnswers = [];
+            
+            // Mostrar contenedor de pregunta
+            document.getElementById('question-container').style.display = 'block';
+            
+            // Actualizar texto de la pregunta
+            document.getElementById('question-text').textContent = `Pregunta ${question.id}: ${question.question}`;
+            
+            // Mostrar imagen si existe
+            if (question.image) {
+                const imageContainer = document.getElementById('question-image-container');
+                const image = document.getElementById('question-image');
+                image.src = question.image;
+                imageContainer.style.display = 'block';
+            } else {
+                document.getElementById('question-image-container').style.display = 'none';
+            }
+            
+            // Limpiar opciones anteriores
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            // Detectar si es pregunta de múltiples respuestas
+            const hasMultipleCorrect = Array.isArray(question.correct);
+            
+            // Mostrar instrucciones para preguntas múltiples
+            const instruction = document.getElementById('multiple-instruction');
+            if (hasMultipleCorrect) {
+                instruction.style.display = 'block';
+            } else {
+                instruction.style.display = 'none';
+            }
+            
+            // Crear opciones
+            console.log(`Creando ${question.options.length} opciones para pregunta ${question.id}`);
+            console.log(`Es pregunta múltiple: ${hasMultipleCorrect}`);
+            
+            question.options.forEach((option, index) => {
+                const optionElement = document.createElement('div');
+                optionElement.className = 'option';
+                optionElement.dataset.index = index;
+                
+                if (hasMultipleCorrect) {
+                    // Para preguntas múltiples, usar checkboxes
+                    optionElement.innerHTML = `
+                        <input type="checkbox" id="option-${index}" onchange="toggleMultipleAnswer(${index})">
+                        <label for="option-${index}">${option}</label>
+                    `;
+                    console.log(`Creada opción ${index} con checkbox`);
+                } else {
+                    // Para preguntas simples, usar radio buttons
+                    optionElement.innerHTML = `
+                        <input type="radio" name="answer" id="option-${index}" value="${index}" onchange="selectSingleAnswer(${index})">
+                        <label for="option-${index}">${option}</label>
+                    `;
+                    console.log(`Creada opción ${index} con radio button`);
+                }
+                
+                optionElement.addEventListener('click', (e) => {
+                    console.log(`Click en opción ${index}`);
+                    if (e.target.type !== 'checkbox' && e.target.type !== 'radio') {
+                        if (hasMultipleCorrect) {
+                            const checkbox = optionElement.querySelector('input[type="checkbox"]');
+                            checkbox.checked = !checkbox.checked;
+                            toggleMultipleAnswer(index);
+                        } else {
+                            const radio = optionElement.querySelector('input[type="radio"]');
+                            radio.checked = true;
+                            selectSingleAnswer(index);
+                        }
+                    }
+                });
+                
+                optionsContainer.appendChild(optionElement);
+            });
+            
+            // Resetear botones y explicación
+            document.getElementById('check-answer').disabled = true;
+            document.getElementById('check-answer').style.display = 'inline-block';
+            document.getElementById('next-question').style.display = 'none';
+            document.getElementById('explanation').style.display = 'none';
+            document.getElementById('result').style.display = 'none';
+        }
+        
+        function toggleMultipleAnswer(selectedIndex) {
+            console.log(`toggleMultipleAnswer llamado con índice ${selectedIndex}`);
+            const optionElement = document.querySelector(`[data-index="${selectedIndex}"]`);
+            const checkbox = optionElement.querySelector('input[type="checkbox"]');
+            
+            if (checkbox.checked) {
+                optionElement.classList.add('selected');
+                if (!selectedAnswers.includes(selectedIndex)) {
+                    selectedAnswers.push(selectedIndex);
+                }
+                console.log(`Opción ${selectedIndex} seleccionada. Total seleccionadas: ${selectedAnswers.length}`);
+            } else {
+                optionElement.classList.remove('selected');
+                selectedAnswers = selectedAnswers.filter(index => index !== selectedIndex);
+                console.log(`Opción ${selectedIndex} deseleccionada. Total seleccionadas: ${selectedAnswers.length}`);
+            }
+            
+            // Habilitar botón de verificar si hay al menos una selección
+            document.getElementById('check-answer').disabled = selectedAnswers.length === 0;
+            console.log(`Botón verificar ${selectedAnswers.length === 0 ? 'deshabilitado' : 'habilitado'}`);
+        }
+        
+        function selectSingleAnswer(selectedIndex) {
+            selectedAnswers = [selectedIndex];
+            
+            // Actualizar estilos visuales
+            document.querySelectorAll('.option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            document.querySelector(`[data-index="${selectedIndex}"]`).classList.add('selected');
+            
+            // Habilitar botón de verificar
+            document.getElementById('check-answer').disabled = false;
+        }
+        
+        function checkAnswer() {
+            if (!currentQuestion) return;
+            
+            const isMultiple = Array.isArray(currentQuestion.correct);
+            let isCorrect = false;
+            
+            if (isMultiple) {
+                // Para preguntas múltiples, verificar si todas las respuestas correctas están seleccionadas
+                const correctAnswers = [...currentQuestion.correct].sort();
+                const selectedAnswersSorted = [...selectedAnswers].sort();
+                isCorrect = correctAnswers.length === selectedAnswersSorted.length && 
+                           correctAnswers.every((answer, index) => answer === selectedAnswersSorted[index]);
+            } else {
+                // Para preguntas simples
+                isCorrect = selectedAnswers.length === 1 && selectedAnswers[0] === currentQuestion.correct;
+            }
+            
+            // Mostrar retroalimentación visual
+            showAnswerFeedback(isCorrect);
+            
+            // Mostrar explicación
+            if (currentQuestion.explanation) {
+                document.getElementById('explanation-text').textContent = currentQuestion.explanation;
+                document.getElementById('explanation').style.display = 'block';
+            }
+            
+            // Mostrar resultado
+            const result = document.getElementById('result');
+            result.textContent = isCorrect ? '✅ ¡Correcto!' : '❌ Incorrecto';
+            result.className = `result ${isCorrect ? 'correct' : 'incorrect'}`;
+            result.style.display = 'block';
+            
+            // Cambiar botones
+            document.getElementById('check-answer').style.display = 'none';
+            document.getElementById('next-question').style.display = 'inline-block';
+        }
+        
+        function showAnswerFeedback(isCorrect) {
+            const options = document.querySelectorAll('.option');
+            const isMultiple = Array.isArray(currentQuestion.correct);
+            
+            options.forEach((option, index) => {
+                const input = option.querySelector('input');
+                input.disabled = true;
+                
+                if (isMultiple) {
+                    if (currentQuestion.correct.includes(index)) {
+                        option.classList.add('correct');
+                    }
+                    if (selectedAnswers.includes(index) && !currentQuestion.correct.includes(index)) {
+                        option.classList.add('incorrect');
+                    }
+                } else {
+                    if (index === currentQuestion.correct) {
+                        option.classList.add('correct');
+                    } else if (selectedAnswers.includes(index) && index !== currentQuestion.correct) {
+                        option.classList.add('incorrect');
+                    }
+                }
+            });
+        }
+        
+        // Cargar preguntas al iniciar
+        window.onload = async () => {
+            await loadQuestions();
+            
+            // Agregar evento Enter al input
+            document.getElementById('question-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    loadQuestion();
+                }
+            });
+        };
+    </script>
+</body>
+</html>

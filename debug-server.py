@@ -25,6 +25,8 @@ class DebugHandler(BaseHTTPRequestHandler):
         # Servir archivos estáticos
         elif path == '/' or path == '/debug':
             self.serve_file('debug.html')
+        elif path == '/quiz-debug.html':
+            self.serve_file('quiz-debug.html')
         elif path == '/questions.json':
             self.serve_file('questions.json')
         elif path.startswith('/img/'):
@@ -165,7 +167,7 @@ class DebugHandler(BaseHTTPRequestHandler):
             <h3>📝 Depuración de preguntas</h3>
             <p>Ingresa el número de la pregunta para visualizar y corregir el problema:</p>
             <div class="input-group">
-                <input type="number" id="question-input" placeholder="Ej: 21" min="1" max="100">
+                <input type="number" id="question-input" placeholder="Ej: 21" min="1" max="199">
                 <button onclick="goToQuestion()">🔍 Ver Pregunta</button>
             </div>
         </div>
@@ -183,8 +185,8 @@ class DebugHandler(BaseHTTPRequestHandler):
             const input = document.getElementById('question-input');
             const questionId = parseInt(input.value);
             
-            if (!questionId || questionId < 1) {{
-                alert('Por favor, ingresa un número de pregunta válido (1-100)');
+            if (!questionId || questionId < 1 || questionId > 199) {{
+                alert('Por favor, ingresa un número de pregunta válido (1-199)');
                 return;
             }}
             

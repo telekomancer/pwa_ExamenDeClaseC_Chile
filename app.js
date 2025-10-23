@@ -27,6 +27,9 @@ class ClaseCApp {
       this.updateWelcomeScreen();
       this.requestNotificationPermission();
       
+      // Verificar si hay parámetro de debug en la URL
+      this.checkDebugMode();
+      
       this.hideLoading();
       console.log('✅ Aplicación inicializada correctamente');
       
@@ -176,6 +179,25 @@ class ClaseCApp {
     this.saveUserProgress();
   }
 
+  checkDebugMode() {
+    // Verificar si hay parámetro de debug en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const debugQuestionId = urlParams.get('debug');
+    
+    if (debugQuestionId) {
+      const questionId = parseInt(debugQuestionId);
+      if (questionId && questionId >= 1 && questionId <= this.questions.length) {
+        console.log(`🔍 Modo debug: Cargando pregunta ${questionId}`);
+        // Iniciar sesión con la pregunta específica
+        setTimeout(() => {
+          this.startNewSession(questionId);
+        }, 1000); // Pequeño delay para que la UI esté lista
+      } else {
+        console.error(`❌ ID de pregunta inválido: ${debugQuestionId}`);
+      }
+    }
+  }
+
   loadUserProgress() {
     try {
       const saved = localStorage.getItem('clase-c-progress');
@@ -280,9 +302,22 @@ class ClaseCApp {
     }
   }
 
-  startNewSession() {
-    // Seleccionar preguntas para la nueva sesión
-    const sessionQuestions = this.selectDailyQuestions();
+  startNewSession(questionId = null) {
+    let sessionQuestions;
+    
+    if (questionId) {
+      // Modo debug: mostrar pregunta específica
+      const question = this.questions.find(q => q.id === questionId);
+      if (!question) {
+        this.showError(`Pregunta ${questionId} no encontrada`);
+        return;
+      }
+      sessionQuestions = [question];
+    } else {
+      // Modo normal: seleccionar preguntas aleatorias
+      sessionQuestions = this.selectDailyQuestions();
+    }
+    
     this.currentSession = {
       questions: sessionQuestions,
       startTime: new Date(),
@@ -412,23 +447,21 @@ class ClaseCApp {
   selectAnswer(selectedIndex) {
     const question = this.currentSession.questions[this.currentQuestionIndex];
     
-    // Determinar si es correcto
-    let isCorrect;
+    // Para preguntas de múltiples respuestas, no verificar inmediatamente
     if (Array.isArray(question.correct)) {
-      // Para preguntas de múltiples respuestas, verificar si todas las respuestas correctas están seleccionadas
-      const correctAnswers = question.correct.sort();
-      const selectedAnswers = this.currentMultipleSelections.sort();
-      isCorrect = correctAnswers.length === selectedAnswers.length && 
-                  correctAnswers.every((answer, index) => answer === selectedAnswers[index]);
-    } else {
-      // Para preguntas de respuesta única
-      isCorrect = selectedIndex === question.correct;
+      // Solo habilitar el botón siguiente, no verificar aún
+      const nextButton = document.getElementById('next-question');
+      nextButton.disabled = this.currentMultipleSelections.length === 0;
+      return;
     }
+    
+    // Para preguntas de respuesta única, verificar inmediatamente
+    const isCorrect = selectedIndex === question.correct;
     
     // Guardar respuesta
     this.sessionAnswers.push({
       questionId: question.id,
-      selectedAnswer: Array.isArray(question.correct) ? this.currentMultipleSelections : selectedIndex,
+      selectedAnswer: selectedIndex,
       correctAnswer: question.correct,
       isCorrect: isCorrect,
       timeSpent: this.getTimeSpent()
@@ -489,7 +522,41 @@ class ClaseCApp {
     optionsContainer.appendChild(explanationElement);
   }
 
+  verifyMultipleAnswer() {
+    const question = this.currentSession.questions[this.currentQuestionIndex];
+    
+    // Verificar si todas las respuestas correctas están seleccionadas
+    const correctAnswers = question.correct.sort();
+    const selectedAnswers = this.currentMultipleSelections.sort();
+    const isCorrect = correctAnswers.length === selectedAnswers.length && 
+                     correctAnswers.every((answer, index) => answer === selectedAnswers[index]);
+    
+    // Guardar respuesta
+    this.sessionAnswers.push({
+      questionId: question.id,
+      selectedAnswer: this.currentMultipleSelections,
+      correctAnswer: question.correct,
+      isCorrect: isCorrect,
+      timeSpent: this.getTimeSpent()
+    });
+    
+    // Mostrar retroalimentación visual
+    this.showAnswerFeedback(question, null);
+    
+    // Mostrar explicación si está disponible
+    if (question.explanation) {
+      this.showExplanation(question.explanation);
+    }
+  }
+
   nextQuestion() {
+    // Verificar si la pregunta actual es de múltiples respuestas y no se ha verificado
+    const currentQuestion = this.currentSession.questions[this.currentQuestionIndex];
+    if (Array.isArray(currentQuestion.correct) && this.currentMultipleSelections.length > 0) {
+      // Verificar respuesta múltiple antes de continuar
+      this.verifyMultipleAnswer();
+    }
+    
     this.currentQuestionIndex++;
     
     if (this.currentQuestionIndex < this.currentSession.questions.length) {
@@ -797,6 +864,24 @@ class ClaseCApp {
 // Inicializar la aplicación cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
   window.claseCApp = new ClaseCApp();
+  
+  // Funciones de debug globales
+  window.debugQuestion = (questionId) => {
+    if (window.claseCApp) {
+      window.claseCApp.startNewSession(questionId);
+    } else {
+      console.error('La aplicación no está inicializada');
+    }
+  };
+  
+  window.debugRandomQuestion = () => {
+    if (window.claseCApp && window.claseCApp.questions.length > 0) {
+      const randomId = window.claseCApp.questions[Math.floor(Math.random() * window.claseCApp.questions.length)].id;
+      window.claseCApp.startNewSession(randomId);
+    } else {
+      console.error('La aplicación no está inicializada o no hay preguntas');
+    }
+  };
 });
 
 // Manejar instalación de PWA
